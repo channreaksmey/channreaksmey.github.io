@@ -1,0 +1,22 @@
+{
+  "model_type": "RandomForestRegressor",
+  "n_estimators": 100,
+  "features": [
+    "square_feet",
+    "building_age",
+    "type_Office",
+    "type_Retail",
+    "type_Warehouse"
+  ],
+  "feature_importance": {
+    "square_feet": 0.4455,
+    "building_age": 0.2312,
+    "type_Office": 0.2615,
+    "type_Retail": 0.0587,
+    "type_Warehouse": 0.003
+  },
+  "metrics": {
+    "rmse": 175987.51782035973,
+    "r2": 0.8843023692491248
+  }
+}

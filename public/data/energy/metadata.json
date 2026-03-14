@@ -1,0 +1,16 @@
+{
+  "features": [
+    "square_feet",
+    "building_age",
+    "type_Office",
+    "type_Retail",
+    "type_Warehouse"
+  ],
+  "target": "energy_consumption_kbtu",
+  "n_samples": 14,
+  "building_types": [
+    "Office",
+    "Retail",
+    "Warehouse"
+  ]
+}

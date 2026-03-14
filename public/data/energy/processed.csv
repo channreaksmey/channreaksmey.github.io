@@ -1,0 +1,15 @@
+building_id,square_feet,building_age,energy_consumption_kbtu,type_Office,type_Retail,type_Warehouse
+1,50000,15,1250000,True,False,False
+2,75000,8,1800000,True,False,False
+4,35000,5,650000,False,True,False
+5,45000,12,850000,False,True,False
+6,60000,30,1400000,False,True,False
+7,80000,10,950000,False,False,True
+8,95000,18,1350000,False,False,True
+9,110000,22,1680000,False,False,True
+10,25000,3,380000,False,True,False
+11,55000,14,1380000,True,False,False
+12,70000,20,1750000,True,False,False
+13,85000,6,1020000,False,False,True
+14,40000,28,920000,False,True,False
+15,100000,16,2450000,True,False,False
