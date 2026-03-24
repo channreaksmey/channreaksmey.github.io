@@ -6,10 +6,10 @@ const PROJECTS = [
     id: 1,
     title: "Building Energy Consumption Predictor",
     description: "Machine learning model to predict energy usage in commercial buildings based on size, age, and type. Includes interactive demo where you can input building parameters.",
-    status: "In Progress",
+    status: "Complete",
     tags: ["Regression", "Python", "React", "Energy Data"],
     githubUrl: "#",
-    demoUrl: "#",
+    demoUrl: "#/projects/energy",
     metrics: { rmse: 0.45, r2: 0.82 }
   },
   {
@@ -105,7 +105,7 @@ export default function Projects() {
             
             <div className="p-4 bg-gray-50 border-t flex gap-3">
               <a href={project.githubUrl} className="flex-1 text-center py-2 border rounded hover:bg-white transition-colors text-sm">
-                Code
+                GitHub Repo
               </a>
               <a href={project.demoUrl} className="flex-1 text-center py-2 bg-primary text-white rounded hover:bg-blue-600 transition-colors text-sm">
                 Live Demo
