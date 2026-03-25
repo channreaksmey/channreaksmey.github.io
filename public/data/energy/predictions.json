@@ -1,503 +1,503 @@
 [
   {
     "building_id":1,
-    "building_name":"DEL MAR APTS",
+    "building_name":"TESLA MOTORS INC",
     "building_type":"Other",
-    "square_feet":43132,
-    "building_age":45,
-    "energy_consumption_kbtu":1228837.0,
-    "predicted_consumption":1228829.3400000001,
+    "square_feet":25920,
+    "building_age":106,
+    "energy_consumption_kbtu":1175787.0,
+    "predicted_consumption":1175786.49,
     "error_percent":0.0
   },
   {
     "building_id":2,
-    "building_name":"PARAMOUNT THEATRE",
+    "building_name":"THE PACIFIC",
     "building_type":"Other",
-    "square_feet":102761,
-    "building_age":100,
-    "energy_consumption_kbtu":6852434.0,
-    "predicted_consumption":6852386.1399999997,
+    "square_feet":23341,
+    "building_age":37,
+    "energy_consumption_kbtu":872496.0,
+    "predicted_consumption":872473.15,
     "error_percent":0.0
   },
   {
     "building_id":3,
-    "building_name":"GOODWILL BUILDING",
-    "building_type":"Warehouse",
-    "square_feet":111908,
-    "building_age":39,
-    "energy_consumption_kbtu":1555420.0,
-    "predicted_consumption":1555443.6299999999,
+    "building_name":"2+U",
+    "building_type":"Office",
+    "square_feet":899127,
+    "building_age":7,
+    "energy_consumption_kbtu":30593952.0,
+    "predicted_consumption":30594756.8099999987,
     "error_percent":0.0
   },
   {
     "building_id":4,
-    "building_name":"500 YALE AVENUE NORTH",
-    "building_type":"Office",
-    "square_feet":141131,
-    "building_age":17,
-    "energy_consumption_kbtu":2550169.0,
-    "predicted_consumption":2550216.5099999998,
+    "building_name":"GREENWOOD VISTA",
+    "building_type":"Other",
+    "square_feet":25914,
+    "building_age":59,
+    "energy_consumption_kbtu":765316.0,
+    "predicted_consumption":765289.26,
     "error_percent":0.0
   },
   {
     "building_id":5,
-    "building_name":"LAKE UNION BUILDING",
-    "building_type":"Office",
-    "square_feet":156698,
-    "building_age":56,
-    "energy_consumption_kbtu":6038778.0,
-    "predicted_consumption":6038663.1600000001,
+    "building_name":"TYEE APARTMENTS",
+    "building_type":"Other",
+    "square_feet":25568,
+    "building_age":63,
+    "energy_consumption_kbtu":722062.0,
+    "predicted_consumption":722096.8199999999,
     "error_percent":0.0
   },
   {
     "building_id":6,
-    "building_name":"NORTHWEST OUTPATIENT MEDICAL CENTER",
-    "building_type":"Office",
-    "square_feet":133298,
-    "building_age":65,
-    "energy_consumption_kbtu":16538558.0,
-    "predicted_consumption":16538231.2899999991,
-    "error_percent":0.0
+    "building_name":"CUMBERLAND APARTMENTS",
+    "building_type":"Other",
+    "square_feet":30080,
+    "building_age":37,
+    "energy_consumption_kbtu":697424.0,
+    "predicted_consumption":697468.7,
+    "error_percent":0.01
   },
   {
     "building_id":7,
-    "building_name":"SALMON BAY FISHERIES BLDG",
-    "building_type":"Office",
-    "square_feet":22365,
-    "building_age":47,
-    "energy_consumption_kbtu":727386.0,
-    "predicted_consumption":727400.42,
-    "error_percent":0.0
+    "building_name":"GREEN ACRES APT",
+    "building_type":"Other",
+    "square_feet":20010,
+    "building_age":58,
+    "energy_consumption_kbtu":634056.0,
+    "predicted_consumption":633989.0699999999,
+    "error_percent":-0.01
   },
   {
     "building_id":8,
-    "building_name":"Portage Bay Flats",
+    "building_name":"CARIBBEAN MANOR APT'S",
     "building_type":"Other",
-    "square_feet":30649,
-    "building_age":12,
-    "energy_consumption_kbtu":1158375.0,
-    "predicted_consumption":1158405.1499999999,
-    "error_percent":0.0
+    "square_feet":29683,
+    "building_age":57,
+    "energy_consumption_kbtu":1009566.0,
+    "predicted_consumption":1009439.8100000001,
+    "error_percent":-0.01
   },
   {
     "building_id":9,
-    "building_name":"NINE CHERRY SQUARE",
+    "building_name":"ALKI BEACH TOWERS CONDOMINIUM",
     "building_type":"Other",
-    "square_feet":27627,
-    "building_age":57,
-    "energy_consumption_kbtu":1256958.0,
-    "predicted_consumption":1256904.9099999999,
-    "error_percent":0.0
+    "square_feet":37824,
+    "building_age":31,
+    "energy_consumption_kbtu":1056099.0,
+    "predicted_consumption":1056235.29,
+    "error_percent":0.01
   },
   {
     "building_id":10,
-    "building_name":"CENTERVIEW APTS",
+    "building_name":"Kerry Hall",
     "building_type":"Other",
-    "square_feet":21095,
-    "building_age":116,
-    "energy_consumption_kbtu":786991.0,
-    "predicted_consumption":786954.71,
-    "error_percent":0.0
+    "square_feet":31900,
+    "building_age":105,
+    "energy_consumption_kbtu":2433777.0,
+    "predicted_consumption":2433453.4300000002,
+    "error_percent":-0.01
   },
   {
     "building_id":11,
-    "building_name":"MICHELE APTS",
-    "building_type":"Other",
-    "square_feet":38100,
-    "building_age":41,
-    "energy_consumption_kbtu":1106535.0,
-    "predicted_consumption":1106481.22,
-    "error_percent":0.0
+    "building_name":"HERMAN BLUMENTHAL BUILDING",
+    "building_type":"Office",
+    "square_feet":28142,
+    "building_age":126,
+    "energy_consumption_kbtu":932894.0,
+    "predicted_consumption":932768.08,
+    "error_percent":-0.01
   },
   {
     "building_id":12,
-    "building_name":"BAY VISTA OFFICE BUILDING",
+    "building_name":"101 KING STREET",
     "building_type":"Office",
-    "square_feet":119701,
-    "building_age":44,
-    "energy_consumption_kbtu":8382140.0,
-    "predicted_consumption":8382567.7999999998,
-    "error_percent":0.01
+    "square_feet":95000,
+    "building_age":116,
+    "energy_consumption_kbtu":3579098.0,
+    "predicted_consumption":3578506.8900000001,
+    "error_percent":-0.02
   },
   {
     "building_id":13,
-    "building_name":"51 UNIVERSITY (SCHWABACHER BLDG.)",
-    "building_type":"Office",
-    "square_feet":117182,
-    "building_age":108,
-    "energy_consumption_kbtu":4517172.0,
-    "predicted_consumption":4516842.6299999999,
-    "error_percent":-0.01
+    "building_name":"THE FLATS AT INTERBAY APTS",
+    "building_type":"Other",
+    "square_feet":112264,
+    "building_age":12,
+    "energy_consumption_kbtu":2594938.0,
+    "predicted_consumption":2594454.6699999999,
+    "error_percent":-0.02
   },
   {
     "building_id":14,
-    "building_name":"ADMIRAL METROPOLITAN MARKET",
-    "building_type":"Retail",
-    "square_feet":31841,
-    "building_age":29,
-    "energy_consumption_kbtu":12204922.0,
-    "predicted_consumption":12203788.5999999996,
-    "error_percent":-0.01
+    "building_name":"THE TOWERS ON GREENWOOD",
+    "building_type":"Other",
+    "square_feet":98486,
+    "building_age":26,
+    "energy_consumption_kbtu":2280976.0,
+    "predicted_consumption":2280520.8700000001,
+    "error_percent":-0.02
   },
   {
     "building_id":15,
-    "building_name":"MERIDIAN",
+    "building_name":"BEACON TOWER APTS",
     "building_type":"Other",
-    "square_feet":179678,
-    "building_age":24,
-    "energy_consumption_kbtu":11568868.0,
-    "predicted_consumption":11567713.2300000004,
-    "error_percent":-0.01
+    "square_feet":73898,
+    "building_age":55,
+    "energy_consumption_kbtu":3221754.0,
+    "predicted_consumption":3222423.6600000001,
+    "error_percent":0.02
   },
   {
     "building_id":16,
-    "building_name":"GARDEN COURT ON BELMONT CONDOMINIUM",
+    "building_name":"HONDA - TOYOTA AUTO DEALERSHIP",
     "building_type":"Other",
-    "square_feet":32989,
-    "building_age":32,
-    "energy_consumption_kbtu":1192100.0,
-    "predicted_consumption":1191979.1399999999,
-    "error_percent":-0.01
+    "square_feet":328775,
+    "building_age":11,
+    "energy_consumption_kbtu":5082298.0,
+    "predicted_consumption":5083447.7400000002,
+    "error_percent":0.02
   },
   {
     "building_id":17,
-    "building_name":"THE MEDITERRANEAN INN",
-    "building_type":"Hotel",
-    "square_feet":127200,
-    "building_age":24,
-    "energy_consumption_kbtu":4902622.0,
-    "predicted_consumption":4902109.9800000004,
-    "error_percent":-0.01
+    "building_name":"O'SHEA BUILDING\/GAP",
+    "building_type":"Retail",
+    "square_feet":79957,
+    "building_age":112,
+    "energy_consumption_kbtu":5252131.0,
+    "predicted_consumption":5253322.8799999999,
+    "error_percent":0.02
   },
   {
     "building_id":18,
-    "building_name":"CROWNE PLAZA",
-    "building_type":"Hotel",
-    "square_feet":353111,
-    "building_age":46,
-    "energy_consumption_kbtu":18720176.0,
-    "predicted_consumption":18722432.4100000001,
-    "error_percent":0.01
+    "building_name":"ECKSTEIN MIDDLE (SPS-DISTRICT)",
+    "building_type":"School",
+    "square_feet":175565,
+    "building_age":76,
+    "energy_consumption_kbtu":7618848.0,
+    "predicted_consumption":7620779.9199999999,
+    "error_percent":0.03
   },
   {
     "building_id":19,
-    "building_name":"GALLERY BELLTOWN",
-    "building_type":"Other",
-    "square_feet":224105,
-    "building_age":18,
-    "energy_consumption_kbtu":7945081.0,
-    "predicted_consumption":7944112.9800000004,
-    "error_percent":-0.01
+    "building_name":"GEORGETOWN  INN",
+    "building_type":"Hotel",
+    "square_feet":22452,
+    "building_age":34,
+    "energy_consumption_kbtu":1354219.0,
+    "predicted_consumption":1353860.4399999999,
+    "error_percent":-0.03
   },
   {
     "building_id":20,
-    "building_name":"RADIUS APTS",
+    "building_name":"CLAIREMONT APT HOMES",
     "building_type":"Other",
-    "square_feet":253015,
-    "building_age":12,
-    "energy_consumption_kbtu":7729147.0,
-    "predicted_consumption":7730272.4199999999,
-    "error_percent":0.01
+    "square_feet":41144,
+    "building_age":117,
+    "energy_consumption_kbtu":1445738.0,
+    "predicted_consumption":1445349.45,
+    "error_percent":-0.03
   },
   {
     "building_id":21,
-    "building_name":"CENTRAL LINK OPERATIONS & MAINTENANCE - Sound Transit",
+    "building_name":"SLATE APARTMENTS",
     "building_type":"Other",
-    "square_feet":162157,
-    "building_age":21,
-    "energy_consumption_kbtu":38819136.0,
-    "predicted_consumption":38813196.3900000006,
-    "error_percent":-0.02
+    "square_feet":209583,
+    "building_age":12,
+    "energy_consumption_kbtu":5590266.0,
+    "predicted_consumption":5591826.9500000002,
+    "error_percent":0.03
   },
   {
     "building_id":22,
-    "building_name":"202 WESTLAKE",
-    "building_type":"Office",
-    "square_feet":231510,
-    "building_age":13,
-    "energy_consumption_kbtu":6677130.0,
-    "predicted_consumption":6678300.0300000003,
-    "error_percent":0.02
+    "building_name":"SANISLO ELEMENTARY SCHOOL (SPS-DISTRICT)",
+    "building_type":"School",
+    "square_feet":41526,
+    "building_age":56,
+    "energy_consumption_kbtu":2083439.0,
+    "predicted_consumption":2084056.6399999999,
+    "error_percent":0.03
   },
   {
     "building_id":23,
-    "building_name":"BEACON HILL SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":51704,
-    "building_age":55,
-    "energy_consumption_kbtu":1981201.0,
-    "predicted_consumption":1980823.71,
-    "error_percent":-0.02
+    "building_name":"NAVOS PSYCHIATRIC HOSPITAL",
+    "building_type":"Office",
+    "square_feet":43615,
+    "building_age":56,
+    "energy_consumption_kbtu":3065489.0,
+    "predicted_consumption":3066464.3999999999,
+    "error_percent":0.03
   },
   {
     "building_id":24,
-    "building_name":"GATZERT ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":52924,
-    "building_age":38,
-    "energy_consumption_kbtu":1946370.0,
-    "predicted_consumption":1945977.99,
-    "error_percent":-0.02
+    "building_name":"TWO PINE",
+    "building_type":"Office",
+    "square_feet":132998,
+    "building_age":118,
+    "energy_consumption_kbtu":4478802.0,
+    "predicted_consumption":4477293.0800000001,
+    "error_percent":-0.03
   },
   {
     "building_id":25,
-    "building_name":"THE CRESTVIEW",
+    "building_name":"TYEE APARTMENTS",
     "building_type":"Other",
-    "square_feet":37080,
-    "building_age":58,
-    "energy_consumption_kbtu":1155557.0,
-    "predicted_consumption":1155316.6399999999,
-    "error_percent":-0.02
+    "square_feet":25568,
+    "building_age":63,
+    "energy_consumption_kbtu":721845.0,
+    "predicted_consumption":722096.8199999999,
+    "error_percent":0.03
   },
   {
     "building_id":26,
-    "building_name":"LEVERE APTS",
+    "building_name":"SEA MARINE AND FISH SUPPLY CO",
     "building_type":"Other",
-    "square_feet":25904,
-    "building_age":99,
-    "energy_consumption_kbtu":1039083.0,
-    "predicted_consumption":1038857.05,
-    "error_percent":-0.02
+    "square_feet":56259,
+    "building_age":52,
+    "energy_consumption_kbtu":2364327.0,
+    "predicted_consumption":2365280.7200000002,
+    "error_percent":0.04
   },
   {
     "building_id":27,
-    "building_name":"QFC - Ballard",
-    "building_type":"Retail",
-    "square_feet":41198,
-    "building_age":16,
-    "energy_consumption_kbtu":6162846.0,
-    "predicted_consumption":6161419.4800000004,
-    "error_percent":-0.02
+    "building_name":"BALLARD BUILDING",
+    "building_type":"Office",
+    "square_feet":94033,
+    "building_age":101,
+    "energy_consumption_kbtu":5295019.0,
+    "predicted_consumption":5297187.4500000002,
+    "error_percent":0.04
   },
   {
     "building_id":28,
-    "building_name":"FRED MEYER GREENWOOD",
-    "building_type":"Other",
-    "square_feet":314958,
-    "building_age":56,
-    "energy_consumption_kbtu":15322951.0,
-    "predicted_consumption":15326650.8699999992,
-    "error_percent":0.02
+    "building_name":"TABLEAU",
+    "building_type":"Office",
+    "square_feet":53108,
+    "building_age":30,
+    "energy_consumption_kbtu":2599350.0,
+    "predicted_consumption":2600415.1699999999,
+    "error_percent":0.04
   },
   {
     "building_id":29,
-    "building_name":"LAKE WASHINGTON APARTMENTS",
+    "building_name":"CRISTALLA CONDOMINIUM",
     "building_type":"Other",
-    "square_feet":332900,
-    "building_age":79,
-    "energy_consumption_kbtu":12894875.0,
-    "predicted_consumption":12891732.6099999994,
-    "error_percent":-0.02
+    "square_feet":248225,
+    "building_age":22,
+    "energy_consumption_kbtu":18628834.0,
+    "predicted_consumption":18620687.6099999994,
+    "error_percent":-0.04
   },
   {
     "building_id":30,
-    "building_name":"LEVA ON MARKET APTS",
-    "building_type":"Other",
-    "square_feet":361727,
-    "building_age":18,
-    "energy_consumption_kbtu":8320064.0,
-    "predicted_consumption":8322105.0099999998,
-    "error_percent":0.02
+    "building_name":"W SEATTLE HOTEL",
+    "building_type":"Hotel",
+    "square_feet":333176,
+    "building_age":28,
+    "energy_consumption_kbtu":24635250.0,
+    "predicted_consumption":24646915.2300000004,
+    "error_percent":0.05
   },
   {
     "building_id":31,
-    "building_name":"PACIFIC PLACE",
+    "building_name":"ELSKAN APTS",
     "building_type":"Other",
-    "square_feet":779969,
-    "building_age":27,
-    "energy_consumption_kbtu":46764128.0,
-    "predicted_consumption":46775700.0200000033,
-    "error_percent":0.02
+    "square_feet":20599,
+    "building_age":50,
+    "energy_consumption_kbtu":516617.0,
+    "predicted_consumption":516863.37,
+    "error_percent":0.05
   },
   {
     "building_id":32,
-    "building_name":"NORTHGATE EXECUTIVE CENTER A",
-    "building_type":"Office",
-    "square_feet":39927,
-    "building_age":52,
-    "energy_consumption_kbtu":3354577.0,
-    "predicted_consumption":3355451.8799999999,
-    "error_percent":0.03
+    "building_name":"WESTWOOD VILLAGE - BLDG A",
+    "building_type":"Retail",
+    "square_feet":64984,
+    "building_age":60,
+    "energy_consumption_kbtu":2226022.0,
+    "predicted_consumption":2227134.7000000002,
+    "error_percent":0.05
   },
   {
     "building_id":33,
-    "building_name":"UNION BAY APTS",
-    "building_type":"Other",
-    "square_feet":86525,
-    "building_age":32,
-    "energy_consumption_kbtu":2294320.0,
-    "predicted_consumption":2294956.3599999999,
-    "error_percent":0.03
+    "building_name":"WASH MUTUAL TOWER (1201 THIRD AVE)",
+    "building_type":"Office",
+    "square_feet":1413575,
+    "building_age":38,
+    "energy_consumption_kbtu":48760400.0,
+    "predicted_consumption":48785355.6599999964,
+    "error_percent":0.05
   },
   {
     "building_id":34,
-    "building_name":"TRACY ANN APTS. - NORTH",
+    "building_name":"TEN-O-FIVE APARTMENTS",
     "building_type":"Other",
-    "square_feet":26498,
-    "building_age":62,
-    "energy_consumption_kbtu":726534.0,
-    "predicted_consumption":726328.86,
-    "error_percent":-0.03
+    "square_feet":38500,
+    "building_age":96,
+    "energy_consumption_kbtu":2071926.0,
+    "predicted_consumption":2070830.72,
+    "error_percent":-0.05
   },
   {
     "building_id":35,
-    "building_name":"PUGET SOUND PLAZA",
-    "building_type":"Office",
-    "square_feet":552176,
-    "building_age":66,
-    "energy_consumption_kbtu":27581142.0,
-    "predicted_consumption":27589383.8299999982,
-    "error_percent":0.03
+    "building_name":"ATWATER PARK CONDOMINIUM",
+    "building_type":"Other",
+    "square_feet":26815,
+    "building_age":24,
+    "energy_consumption_kbtu":894472.0,
+    "predicted_consumption":893992.61,
+    "error_percent":-0.05
   },
   {
     "building_id":36,
-    "building_name":"HILLTOP COURT APTS",
+    "building_name":"EDWARDS ON FIFTH",
     "building_type":"Other",
-    "square_feet":42331,
-    "building_age":39,
-    "energy_consumption_kbtu":1206966.0,
-    "predicted_consumption":1206599.95,
-    "error_percent":-0.03
+    "square_feet":21840,
+    "building_age":97,
+    "energy_consumption_kbtu":1016863.0,
+    "predicted_consumption":1016313.7,
+    "error_percent":-0.05
   },
   {
     "building_id":37,
-    "building_name":"ODIN APARTMENTS",
+    "building_name":"BENAROYA HALL",
     "building_type":"Other",
-    "square_feet":318835,
-    "building_age":12,
-    "energy_consumption_kbtu":7604264.0,
-    "predicted_consumption":7601918.1600000001,
-    "error_percent":-0.03
+    "square_feet":174000,
+    "building_age":28,
+    "energy_consumption_kbtu":13809039.0,
+    "predicted_consumption":13801541.7799999993,
+    "error_percent":-0.05
   },
   {
     "building_id":38,
-    "building_name":"Stone Way Apartments",
+    "building_name":"SUNNY ARMS COOP",
     "building_type":"Other",
-    "square_feet":106218,
-    "building_age":20,
-    "energy_consumption_kbtu":3067737.0,
-    "predicted_consumption":3066779.8999999999,
-    "error_percent":-0.03
+    "square_feet":36000,
+    "building_age":119,
+    "energy_consumption_kbtu":1264919.0,
+    "predicted_consumption":1264221.6899999999,
+    "error_percent":-0.06
   },
   {
     "building_id":39,
-    "building_name":"TERRAVITA APARTMENTS",
-    "building_type":"Other",
-    "square_feet":153767,
-    "building_age":15,
-    "energy_consumption_kbtu":4228638.0,
-    "predicted_consumption":4227101.8399999999,
-    "error_percent":-0.04
+    "building_name":"UNIVERSITY CENTER",
+    "building_type":"Retail",
+    "square_feet":46855,
+    "building_age":39,
+    "energy_consumption_kbtu":2689666.0,
+    "predicted_consumption":2688145.9399999999,
+    "error_percent":-0.06
   },
   {
     "building_id":40,
-    "building_name":"EXECUTIVE ESTATES (BLDGS A, B, C, D)",
+    "building_name":"JONES STEVEDORING",
     "building_type":"Other",
-    "square_feet":165694,
-    "building_age":60,
-    "energy_consumption_kbtu":4763194.0,
-    "predicted_consumption":4761449.2300000004,
-    "error_percent":-0.04
+    "square_feet":140520,
+    "building_age":58,
+    "energy_consumption_kbtu":2805956.0,
+    "predicted_consumption":2804366.8300000001,
+    "error_percent":-0.06
   },
   {
     "building_id":41,
-    "building_name":"51 UNIVERSITY (SCHWABACHER BLDG.)",
-    "building_type":"Office",
-    "square_feet":117182,
-    "building_age":108,
-    "energy_consumption_kbtu":4515180.0,
-    "predicted_consumption":4516842.6299999999,
-    "error_percent":0.04
+    "building_name":"SOUTH SHORE K-8 PUBLIC SCHOOL (SPS-DISTRICT)",
+    "building_type":"School",
+    "square_feet":138705,
+    "building_age":17,
+    "energy_consumption_kbtu":4923393.0,
+    "predicted_consumption":4920603.0700000003,
+    "error_percent":-0.06
   },
   {
     "building_id":42,
-    "building_name":"12TH AVENUE ARTS",
-    "building_type":"Other",
-    "square_feet":158967,
-    "building_age":14,
-    "energy_consumption_kbtu":4973590.0,
-    "predicted_consumption":4975523.79,
-    "error_percent":0.04
+    "building_name":"METROPOLITAN PARK EAST",
+    "building_type":"Office",
+    "square_feet":497513,
+    "building_age":38,
+    "energy_consumption_kbtu":16986752.0,
+    "predicted_consumption":16977090.8000000007,
+    "error_percent":-0.06
   },
   {
     "building_id":43,
-    "building_name":"LAKE VIEW APTS",
-    "building_type":"Other",
-    "square_feet":30347,
-    "building_age":39,
-    "energy_consumption_kbtu":636427.0,
-    "predicted_consumption":636682.21,
-    "error_percent":0.04
+    "building_name":"GOODWILL JOB TRAINING & EDUCATION CTR",
+    "building_type":"Office",
+    "square_feet":62662,
+    "building_age":13,
+    "energy_consumption_kbtu":2729081.0,
+    "predicted_consumption":2727498.52,
+    "error_percent":-0.06
   },
   {
     "building_id":44,
-    "building_name":"EASTLAKE GARDEN APTS & RETAIL",
+    "building_name":"MERITAGE CONDOMINIUM",
     "building_type":"Other",
-    "square_feet":45580,
-    "building_age":29,
-    "energy_consumption_kbtu":1257921.0,
-    "predicted_consumption":1258428.4399999999,
-    "error_percent":0.04
+    "square_feet":43142,
+    "building_age":20,
+    "energy_consumption_kbtu":1236451.0,
+    "predicted_consumption":1235729.6899999999,
+    "error_percent":-0.06
   },
   {
     "building_id":45,
-    "building_name":"STATION AT OTHELLO PARK",
-    "building_type":"Other",
-    "square_feet":387971,
-    "building_age":16,
-    "energy_consumption_kbtu":10762663.0,
-    "predicted_consumption":10767052.5700000003,
-    "error_percent":0.04
+    "building_name":"Willow Creek (Buildings 1 & 2)",
+    "building_type":"Office",
+    "square_feet":24291,
+    "building_age":52,
+    "energy_consumption_kbtu":900072.0,
+    "predicted_consumption":899524.1899999999,
+    "error_percent":-0.06
   },
   {
     "building_id":46,
-    "building_name":"BARCLAY BROADWAY",
-    "building_type":"Other",
-    "square_feet":133706,
-    "building_age":14,
-    "energy_consumption_kbtu":3300470.0,
-    "predicted_consumption":3299111.8100000001,
-    "error_percent":-0.04
+    "building_name":"COURTYARD BY MARRIOTT - SEATTLE",
+    "building_type":"Hotel",
+    "square_feet":207656,
+    "building_age":28,
+    "energy_consumption_kbtu":9993106.0,
+    "predicted_consumption":9999289.6500000004,
+    "error_percent":0.06
   },
   {
     "building_id":47,
-    "building_name":"TERRAVITA APARTMENTS",
+    "building_name":"LUDLOW APTS",
     "building_type":"Other",
-    "square_feet":153767,
-    "building_age":15,
-    "energy_consumption_kbtu":4225362.0,
-    "predicted_consumption":4227101.8399999999,
-    "error_percent":0.04
+    "square_feet":23597,
+    "building_age":116,
+    "energy_consumption_kbtu":1140899.0,
+    "predicted_consumption":1141606.51,
+    "error_percent":0.06
   },
   {
     "building_id":48,
-    "building_name":"THE NEW MCDERMOTT APARTMENTS",
+    "building_name":"MERIDIAN PLACE (BLDGS C & D)",
     "building_type":"Other",
-    "square_feet":54572,
-    "building_age":100,
-    "energy_consumption_kbtu":3488673.0,
-    "predicted_consumption":3490119.0499999998,
-    "error_percent":0.04
+    "square_feet":56800,
+    "building_age":37,
+    "energy_consumption_kbtu":1770847.0,
+    "predicted_consumption":1769743.3400000001,
+    "error_percent":-0.06
   },
   {
     "building_id":49,
-    "building_name":"999 HIAWATHA APARTMENTS",
-    "building_type":"Other",
-    "square_feet":122941,
-    "building_age":12,
-    "energy_consumption_kbtu":1985171.0,
-    "predicted_consumption":1985997.98,
-    "error_percent":0.04
+    "building_name":"DUNCAN BUILDING",
+    "building_type":"Office",
+    "square_feet":38675,
+    "building_age":126,
+    "energy_consumption_kbtu":1425511.0,
+    "predicted_consumption":1426419.24,
+    "error_percent":0.06
   },
   {
     "building_id":50,
-    "building_name":"CITY LIGHT - SOUTH SERVICE CENTER BLDG A",
+    "building_name":"TOWER 801",
     "building_type":"Other",
-    "square_feet":179161,
-    "building_age":102,
-    "energy_consumption_kbtu":9519516.0,
-    "predicted_consumption":9515523.3499999996,
-    "error_percent":-0.04
+    "square_feet":179745,
+    "building_age":56,
+    "energy_consumption_kbtu":7900315.0,
+    "predicted_consumption":7895178.6900000004,
+    "error_percent":-0.07
   },
   {
     "building_id":51,
@@ -506,8 +506,8 @@
     "square_feet":41221,
     "building_age":77,
     "energy_consumption_kbtu":433.0,
-    "predicted_consumption":1952374.54,
-    "error_percent":450794.81
+    "predicted_consumption":1988657.1000000001,
+    "error_percent":459174.16
   },
   {
     "building_id":52,
@@ -516,8 +516,8 @@
     "square_feet":40260,
     "building_age":123,
     "energy_consumption_kbtu":2033.0,
-    "predicted_consumption":789690.2,
-    "error_percent":38743.59
+    "predicted_consumption":800727.89,
+    "error_percent":39286.52
   },
   {
     "building_id":53,
@@ -526,8 +526,8 @@
     "square_feet":22113,
     "building_age":120,
     "energy_consumption_kbtu":551.0,
-    "predicted_consumption":202185.05,
-    "error_percent":36594.2
+    "predicted_consumption":188451.61,
+    "error_percent":34101.74
   },
   {
     "building_id":54,
@@ -536,8 +536,8 @@
     "square_feet":40260,
     "building_age":123,
     "energy_consumption_kbtu":2461.0,
-    "predicted_consumption":789690.2,
-    "error_percent":31988.18
+    "predicted_consumption":800727.89,
+    "error_percent":32436.69
   },
   {
     "building_id":55,
@@ -546,28 +546,28 @@
     "square_feet":40260,
     "building_age":123,
     "energy_consumption_kbtu":2511.0,
-    "predicted_consumption":789690.2,
-    "error_percent":31349.23
+    "predicted_consumption":800727.89,
+    "error_percent":31788.8
   },
   {
     "building_id":56,
+    "building_name":"SALMON BAY TERMINALS - RSVP BLDG",
+    "building_type":"Other",
+    "square_feet":46970,
+    "building_age":78,
+    "energy_consumption_kbtu":11441.0,
+    "predicted_consumption":2105691.75,
+    "error_percent":18304.79
+  },
+  {
+    "building_id":57,
     "building_name":"505 FIRST AVENUE BUILDING",
     "building_type":"Office",
     "square_feet":443509,
     "building_age":17,
     "energy_consumption_kbtu":130865.0,
-    "predicted_consumption":22482421.6799999997,
-    "error_percent":17079.86
-  },
-  {
-    "building_id":57,
-    "building_name":"VERSE SEATTLE + WELCH PLAZA",
-    "building_type":"Other",
-    "square_feet":93024,
-    "building_age":22,
-    "energy_consumption_kbtu":26215.0,
-    "predicted_consumption":2963485.73,
-    "error_percent":11204.54
+    "predicted_consumption":20494945.9699999988,
+    "error_percent":15561.14
   },
   {
     "building_id":58,
@@ -576,198 +576,198 @@
     "square_feet":47368,
     "building_age":47,
     "energy_consumption_kbtu":11405.0,
-    "predicted_consumption":1228607.24,
-    "error_percent":10672.53
+    "predicted_consumption":1533645.2,
+    "error_percent":13347.13
   },
   {
     "building_id":59,
-    "building_name":"THE WESTSIDE- OFF BROADWAY",
-    "building_type":"Other",
-    "square_feet":41384,
-    "building_age":11,
-    "energy_consumption_kbtu":13409.0,
-    "predicted_consumption":1267187.75,
-    "error_percent":9350.28
-  },
-  {
-    "building_id":60,
-    "building_name":"THE WESTSIDE- OFF BROADWAY",
-    "building_type":"Other",
-    "square_feet":41384,
-    "building_age":11,
-    "energy_consumption_kbtu":14483.0,
-    "predicted_consumption":1267187.75,
-    "error_percent":8649.48
-  },
-  {
-    "building_id":61,
-    "building_name":"THE WESTSIDE- OFF BROADWAY",
-    "building_type":"Other",
-    "square_feet":41384,
-    "building_age":11,
-    "energy_consumption_kbtu":14557.0,
-    "predicted_consumption":1267187.75,
-    "error_percent":8605.01
-  },
-  {
-    "building_id":62,
-    "building_name":"WA STATE DEPT OF CORRECTIONS",
-    "building_type":"Office",
-    "square_feet":47368,
-    "building_age":47,
-    "energy_consumption_kbtu":14804.0,
-    "predicted_consumption":1228607.24,
-    "error_percent":8199.16
-  },
-  {
-    "building_id":63,
-    "building_name":"THE WESTSIDE- OFF BROADWAY",
-    "building_type":"Other",
-    "square_feet":41384,
-    "building_age":11,
-    "energy_consumption_kbtu":15394.0,
-    "predicted_consumption":1267187.75,
-    "error_percent":8131.7
-  },
-  {
-    "building_id":64,
-    "building_name":"2ND & SENECA BLDS",
-    "building_type":"Office",
-    "square_feet":635303,
-    "building_age":35,
-    "energy_consumption_kbtu":206698.0,
-    "predicted_consumption":16578239.9199999999,
-    "error_percent":7920.51
-  },
-  {
-    "building_id":65,
-    "building_name":"THE WESTSIDE- OFF BROADWAY",
-    "building_type":"Other",
-    "square_feet":41384,
-    "building_age":11,
-    "energy_consumption_kbtu":15858.0,
-    "predicted_consumption":1267187.75,
-    "error_percent":7890.84
-  },
-  {
-    "building_id":66,
-    "building_name":"ANEW BROADWAY",
-    "building_type":"Other",
-    "square_feet":31178,
-    "building_age":118,
-    "energy_consumption_kbtu":15432.0,
-    "predicted_consumption":1109992.74,
-    "error_percent":7092.8
-  },
-  {
-    "building_id":67,
-    "building_name":"SALMON BAY TERMINALS - RSVP BLDG",
-    "building_type":"Other",
-    "square_feet":46970,
-    "building_age":78,
-    "energy_consumption_kbtu":11441.0,
-    "predicted_consumption":820674.46,
-    "error_percent":7073.1
-  },
-  {
-    "building_id":68,
-    "building_name":"SODO DELI \/ BODY ZONE",
-    "building_type":"Other",
-    "square_feet":20975,
-    "building_age":89,
-    "energy_consumption_kbtu":11957.0,
-    "predicted_consumption":820329.17,
-    "error_percent":6760.66
-  },
-  {
-    "building_id":69,
     "building_name":"VERSE SEATTLE + WELCH PLAZA",
     "building_type":"Other",
     "square_feet":93024,
     "building_age":22,
-    "energy_consumption_kbtu":43824.0,
-    "predicted_consumption":2963485.73,
-    "error_percent":6662.24
+    "energy_consumption_kbtu":26215.0,
+    "predicted_consumption":3061174.0099999998,
+    "error_percent":11577.18
   },
   {
-    "building_id":70,
-    "building_name":"J & M HOTEL BUILDING",
-    "building_type":"Other",
-    "square_feet":25450,
-    "building_age":126,
-    "energy_consumption_kbtu":15934.0,
-    "predicted_consumption":827984.63,
-    "error_percent":5096.34
-  },
-  {
-    "building_id":71,
-    "building_name":"FRYE DISTRIBUTION CENTER",
-    "building_type":"Other",
-    "square_feet":119661,
-    "building_age":66,
-    "energy_consumption_kbtu":277207.0,
-    "predicted_consumption":14291937.0500000007,
-    "error_percent":5055.69
-  },
-  {
-    "building_id":72,
-    "building_name":"1701 1ST AVE S",
-    "building_type":"Other",
-    "square_feet":27690,
-    "building_age":116,
-    "energy_consumption_kbtu":16809.0,
-    "predicted_consumption":783020.17,
-    "error_percent":4558.34
-  },
-  {
-    "building_id":73,
-    "building_name":"1701 1ST AVE S",
-    "building_type":"Other",
-    "square_feet":27690,
-    "building_age":116,
-    "energy_consumption_kbtu":17018.0,
-    "predicted_consumption":783020.17,
-    "error_percent":4501.13
-  },
-  {
-    "building_id":74,
-    "building_name":"1701 1ST AVE S",
-    "building_type":"Other",
-    "square_feet":27690,
-    "building_age":116,
-    "energy_consumption_kbtu":17150.0,
-    "predicted_consumption":783020.17,
-    "error_percent":4465.72
-  },
-  {
-    "building_id":75,
+    "building_id":60,
     "building_name":"LAM-BOWS APTS (demolished - new building ID#24163)",
     "building_type":"Other",
     "square_feet":46986,
     "building_age":56,
     "energy_consumption_kbtu":21657.0,
-    "predicted_consumption":983967.49,
-    "error_percent":4443.42
+    "predicted_consumption":2351835.79,
+    "error_percent":10759.47
   },
   {
-    "building_id":76,
+    "building_id":61,
+    "building_name":"WA STATE DEPT OF CORRECTIONS",
+    "building_type":"Office",
+    "square_feet":47368,
+    "building_age":47,
+    "energy_consumption_kbtu":14804.0,
+    "predicted_consumption":1533645.2,
+    "error_percent":10259.67
+  },
+  {
+    "building_id":62,
+    "building_name":"ANEW BROADWAY",
+    "building_type":"Other",
+    "square_feet":31178,
+    "building_age":118,
+    "energy_consumption_kbtu":15432.0,
+    "predicted_consumption":1198154.8200000001,
+    "error_percent":7664.09
+  },
+  {
+    "building_id":63,
+    "building_name":"740 HARVARD AVE E",
+    "building_type":"Other",
+    "square_feet":28128,
+    "building_age":6,
+    "energy_consumption_kbtu":91791.0,
+    "predicted_consumption":7028615.5800000001,
+    "error_percent":7557.19
+  },
+  {
+    "building_id":64,
+    "building_name":"SODO DELI \/ BODY ZONE",
+    "building_type":"Other",
+    "square_feet":20975,
+    "building_age":89,
+    "energy_consumption_kbtu":11957.0,
+    "predicted_consumption":901956.95,
+    "error_percent":7443.34
+  },
+  {
+    "building_id":65,
+    "building_name":"2ND & SENECA BLDS",
+    "building_type":"Office",
+    "square_feet":635303,
+    "building_age":35,
+    "energy_consumption_kbtu":206698.0,
+    "predicted_consumption":14855106.4800000004,
+    "error_percent":7086.87
+  },
+  {
+    "building_id":66,
+    "building_name":"1701 1ST AVE S",
+    "building_type":"Other",
+    "square_feet":27690,
+    "building_age":116,
+    "energy_consumption_kbtu":16809.0,
+    "predicted_consumption":1196784.22,
+    "error_percent":7019.9
+  },
+  {
+    "building_id":67,
+    "building_name":"1701 1ST AVE S",
+    "building_type":"Other",
+    "square_feet":27690,
+    "building_age":116,
+    "energy_consumption_kbtu":17018.0,
+    "predicted_consumption":1196784.22,
+    "error_percent":6932.46
+  },
+  {
+    "building_id":68,
+    "building_name":"VERSE SEATTLE + WELCH PLAZA",
+    "building_type":"Other",
+    "square_feet":93024,
+    "building_age":22,
+    "energy_consumption_kbtu":43824.0,
+    "predicted_consumption":3061174.0099999998,
+    "error_percent":6885.15
+  },
+  {
+    "building_id":69,
+    "building_name":"1701 1ST AVE S",
+    "building_type":"Other",
+    "square_feet":27690,
+    "building_age":116,
+    "energy_consumption_kbtu":17150.0,
+    "predicted_consumption":1196784.22,
+    "error_percent":6878.33
+  },
+  {
+    "building_id":70,
     "building_name":"1701 1ST AVE S",
     "building_type":"Other",
     "square_feet":27690,
     "building_age":116,
     "energy_consumption_kbtu":17756.0,
-    "predicted_consumption":783020.17,
-    "error_percent":4309.89
+    "predicted_consumption":1196784.22,
+    "error_percent":6640.17
+  },
+  {
+    "building_id":71,
+    "building_name":"THE WESTSIDE- OFF BROADWAY",
+    "building_type":"Other",
+    "square_feet":41384,
+    "building_age":11,
+    "energy_consumption_kbtu":13409.0,
+    "predicted_consumption":789821.87,
+    "error_percent":5790.24
+  },
+  {
+    "building_id":72,
+    "building_name":"THE WESTSIDE- OFF BROADWAY",
+    "building_type":"Other",
+    "square_feet":41384,
+    "building_age":11,
+    "energy_consumption_kbtu":14483.0,
+    "predicted_consumption":789821.87,
+    "error_percent":5353.44
+  },
+  {
+    "building_id":73,
+    "building_name":"THE WESTSIDE- OFF BROADWAY",
+    "building_type":"Other",
+    "square_feet":41384,
+    "building_age":11,
+    "energy_consumption_kbtu":14557.0,
+    "predicted_consumption":789821.87,
+    "error_percent":5325.72
+  },
+  {
+    "building_id":74,
+    "building_name":"LAM-BOWS APTS (demolished - new building ID#24163)",
+    "building_type":"Other",
+    "square_feet":46986,
+    "building_age":56,
+    "energy_consumption_kbtu":43514.0,
+    "predicted_consumption":2351835.79,
+    "error_percent":5304.78
+  },
+  {
+    "building_id":75,
+    "building_name":"FRYE DISTRIBUTION CENTER",
+    "building_type":"Other",
+    "square_feet":119661,
+    "building_age":66,
+    "energy_consumption_kbtu":277207.0,
+    "predicted_consumption":14585087.9199999999,
+    "error_percent":5161.44
+  },
+  {
+    "building_id":76,
+    "building_name":"THE WESTSIDE- OFF BROADWAY",
+    "building_type":"Other",
+    "square_feet":41384,
+    "building_age":11,
+    "energy_consumption_kbtu":15394.0,
+    "predicted_consumption":789821.87,
+    "error_percent":5030.71
   },
   {
     "building_id":77,
-    "building_name":"BOYLSTON APARTMENTS (LIHI)",
+    "building_name":"THE WESTSIDE- OFF BROADWAY",
     "building_type":"Other",
-    "square_feet":27148,
-    "building_age":6,
-    "energy_consumption_kbtu":25186.0,
-    "predicted_consumption":1100954.4199999999,
-    "error_percent":4271.3
+    "square_feet":41384,
+    "building_age":11,
+    "energy_consumption_kbtu":15858.0,
+    "predicted_consumption":789821.87,
+    "error_percent":4880.59
   },
   {
     "building_id":78,
@@ -776,98 +776,98 @@
     "square_feet":22710,
     "building_age":96,
     "energy_consumption_kbtu":26327.0,
-    "predicted_consumption":1060199.53,
-    "error_percent":3927.04
+    "predicted_consumption":1157585.21,
+    "error_percent":4296.95
   },
   {
     "building_id":79,
+    "building_name":"BOYLSTON APARTMENTS (LIHI)",
+    "building_type":"Other",
+    "square_feet":27148,
+    "building_age":6,
+    "energy_consumption_kbtu":25186.0,
+    "predicted_consumption":1038990.65,
+    "error_percent":4025.27
+  },
+  {
+    "building_id":80,
+    "building_name":"J & M HOTEL BUILDING",
+    "building_type":"Other",
+    "square_feet":25450,
+    "building_age":126,
+    "energy_consumption_kbtu":15934.0,
+    "predicted_consumption":621870.05,
+    "error_percent":3802.79
+  },
+  {
+    "building_id":81,
     "building_name":"U.S. BANK- demolished",
     "building_type":"Other",
     "square_feet":28696,
     "building_age":72,
     "energy_consumption_kbtu":26566.0,
-    "predicted_consumption":1029360.78,
-    "error_percent":3774.73
+    "predicted_consumption":1023397.87,
+    "error_percent":3752.28
   },
   {
-    "building_id":80,
+    "building_id":82,
     "building_name":"MAPLE LEAF APTS",
     "building_type":"Other",
     "square_feet":26245,
     "building_age":46,
     "energy_consumption_kbtu":19008.0,
-    "predicted_consumption":715244.9399999999,
-    "error_percent":3662.86
+    "predicted_consumption":725113.6,
+    "error_percent":3714.78
   },
   {
-    "building_id":81,
+    "building_id":83,
+    "building_name":"SEATTLE DESIGN CENTER",
+    "building_type":"Other",
+    "square_feet":156188,
+    "building_age":53,
+    "energy_consumption_kbtu":196270.0,
+    "predicted_consumption":7134332.9900000002,
+    "error_percent":3534.96
+  },
+  {
+    "building_id":84,
     "building_name":"1518 5TH AVE OFFICE",
     "building_type":"Office",
     "square_feet":40260,
     "building_age":123,
     "energy_consumption_kbtu":23236.0,
-    "predicted_consumption":789690.2,
-    "error_percent":3298.56
+    "predicted_consumption":800727.89,
+    "error_percent":3346.07
   },
   {
-    "building_id":82,
-    "building_name":"1518 5TH AVE OFFICE",
-    "building_type":"Office",
-    "square_feet":40260,
-    "building_age":123,
-    "energy_consumption_kbtu":24106.0,
-    "predicted_consumption":789690.2,
-    "error_percent":3175.91
-  },
-  {
-    "building_id":83,
+    "building_id":85,
     "building_name":"SECOND USE",
     "building_type":"Other",
     "square_feet":41308,
     "building_age":74,
     "energy_consumption_kbtu":56554.0,
-    "predicted_consumption":1847573.47,
-    "error_percent":3166.92
+    "predicted_consumption":1930898.28,
+    "error_percent":3314.26
   },
   {
-    "building_id":84,
+    "building_id":86,
+    "building_name":"1518 5TH AVE OFFICE",
+    "building_type":"Office",
+    "square_feet":40260,
+    "building_age":123,
+    "energy_consumption_kbtu":24106.0,
+    "predicted_consumption":800727.89,
+    "error_percent":3221.7
+  },
+  {
+    "building_id":87,
     "building_name":"BEVMO PLAZA",
     "building_type":"Retail",
     "square_feet":236425,
     "building_age":60,
     "energy_consumption_kbtu":80067.0,
-    "predicted_consumption":2560902.9500000002,
-    "error_percent":3098.45
-  },
-  {
-    "building_id":85,
-    "building_name":"NORDIC COLD STORAGE COMPANY",
-    "building_type":"Other",
-    "square_feet":83400,
-    "building_age":122,
-    "energy_consumption_kbtu":26892.0,
-    "predicted_consumption":829126.4,
-    "error_percent":2983.17
-  },
-  {
-    "building_id":86,
-    "building_name":"Seven Seas Building (Formerly Lusty Lady)",
-    "building_type":"Other",
-    "square_feet":24880,
-    "building_age":126,
-    "energy_consumption_kbtu":24126.0,
-    "predicted_consumption":666076.16,
-    "error_percent":2660.82
-  },
-  {
-    "building_id":87,
-    "building_name":"BUNGALOW APTS & REST\/RETAIL",
-    "building_type":"Retail",
-    "square_feet":22113,
-    "building_age":120,
-    "energy_consumption_kbtu":7332.0,
-    "predicted_consumption":202185.05,
-    "error_percent":2657.57
+    "predicted_consumption":2545540.6099999999,
+    "error_percent":3079.26
   },
   {
     "building_id":88,
@@ -876,127 +876,127 @@
     "square_feet":40260,
     "building_age":123,
     "energy_consumption_kbtu":29216.0,
-    "predicted_consumption":789690.2,
-    "error_percent":2602.94
+    "predicted_consumption":800727.89,
+    "error_percent":2640.72
   },
   {
     "building_id":89,
-    "building_name":"THE CHAPMAN BLDG",
-    "building_type":"Retail",
-    "square_feet":25500,
-    "building_age":59,
-    "energy_consumption_kbtu":140484.0,
-    "predicted_consumption":3425453.46,
-    "error_percent":2338.32
+    "building_name":"4727 BUILDING",
+    "building_type":"Other",
+    "square_feet":104786,
+    "building_age":57,
+    "energy_consumption_kbtu":223200.0,
+    "predicted_consumption":6067287.7199999997,
+    "error_percent":2618.32
   },
   {
     "building_id":90,
+    "building_name":"740 HARVARD AVE E",
+    "building_type":"Other",
+    "square_feet":28128,
+    "building_age":6,
+    "energy_consumption_kbtu":260136.0,
+    "predicted_consumption":7028615.5800000001,
+    "error_percent":2601.9
+  },
+  {
+    "building_id":91,
+    "building_name":"BUNGALOW APTS & REST\/RETAIL",
+    "building_type":"Retail",
+    "square_feet":22113,
+    "building_age":120,
+    "energy_consumption_kbtu":7332.0,
+    "predicted_consumption":188451.61,
+    "error_percent":2470.26
+  },
+  {
+    "building_id":92,
+    "building_name":"FRYE DISTRIBUTION CENTER",
+    "building_type":"Warehouse",
+    "square_feet":119661,
+    "building_age":66,
+    "energy_consumption_kbtu":423115.0,
+    "predicted_consumption":10726625.5999999996,
+    "error_percent":2435.16
+  },
+  {
+    "building_id":93,
     "building_name":"WEST CORE RIVER STREET",
     "building_type":"Other",
     "square_feet":71718,
     "building_age":57,
     "energy_consumption_kbtu":93802.0,
-    "predicted_consumption":2275455.6299999999,
-    "error_percent":2325.81
+    "predicted_consumption":2342080.71,
+    "error_percent":2396.83
   },
   {
-    "building_id":91,
+    "building_id":94,
     "building_name":"WAREHOUSE",
     "building_type":"Other",
     "square_feet":38630,
     "building_age":90,
     "energy_consumption_kbtu":79729.0,
-    "predicted_consumption":1847940.05,
-    "error_percent":2217.78
+    "predicted_consumption":1947226.3300000001,
+    "error_percent":2342.31
   },
   {
-    "building_id":92,
-    "building_name":"LAM-BOWS APTS (demolished - new building ID#24163)",
+    "building_id":95,
+    "building_name":"4727 BUILDING",
     "building_type":"Other",
-    "square_feet":46986,
-    "building_age":56,
-    "energy_consumption_kbtu":43514.0,
-    "predicted_consumption":983967.49,
-    "error_percent":2161.27
+    "square_feet":104786,
+    "building_age":57,
+    "energy_consumption_kbtu":249893.0,
+    "predicted_consumption":6067287.7199999997,
+    "error_percent":2327.95
   },
   {
-    "building_id":93,
-    "building_name":"SEATTLE DESIGN CENTER",
+    "building_id":96,
+    "building_name":"4727 BUILDING",
     "building_type":"Other",
-    "square_feet":156188,
-    "building_age":53,
-    "energy_consumption_kbtu":196270.0,
-    "predicted_consumption":4388881.4500000002,
-    "error_percent":2136.14
+    "square_feet":104786,
+    "building_age":57,
+    "energy_consumption_kbtu":260982.0,
+    "predicted_consumption":6067287.7199999997,
+    "error_percent":2224.79
   },
   {
-    "building_id":94,
+    "building_id":97,
     "building_name":"SODO DELI \/ BODY ZONE",
     "building_type":"Other",
     "square_feet":20975,
     "building_age":89,
     "energy_consumption_kbtu":39571.0,
-    "predicted_consumption":820329.17,
-    "error_percent":1973.06
-  },
-  {
-    "building_id":95,
-    "building_name":"ISLAMIC SCHOOL OF SEATTLE",
-    "building_type":"School",
-    "square_feet":24152,
-    "building_age":97,
-    "energy_consumption_kbtu":51410.0,
-    "predicted_consumption":1037340.6800000001,
-    "error_percent":1917.78
-  },
-  {
-    "building_id":96,
-    "building_name":"1518 5TH AVE OFFICE",
-    "building_type":"Office",
-    "square_feet":40260,
-    "building_age":123,
-    "energy_consumption_kbtu":43943.0,
-    "predicted_consumption":789690.2,
-    "error_percent":1697.08
-  },
-  {
-    "building_id":97,
-    "building_name":"WAREHOUSE",
-    "building_type":"Other",
-    "square_feet":38630,
-    "building_age":90,
-    "energy_consumption_kbtu":106719.0,
-    "predicted_consumption":1847940.05,
-    "error_percent":1631.59
+    "predicted_consumption":901956.95,
+    "error_percent":2179.34
   },
   {
     "building_id":98,
-    "building_name":"NORDIC COLD STORAGE COMPANY",
+    "building_name":"820 SOUTH ADAMS BUILDING",
     "building_type":"Other",
-    "square_feet":83400,
-    "building_age":122,
-    "energy_consumption_kbtu":49268.0,
-    "predicted_consumption":829126.4,
-    "error_percent":1582.89
+    "square_feet":25520,
+    "building_age":69,
+    "energy_consumption_kbtu":113042.0,
+    "predicted_consumption":2537530.3500000001,
+    "error_percent":2144.77
   },
   {
     "building_id":99,
-    "building_name":"HOTEL SEATTLE",
-    "building_type":"Hotel",
-    "square_feet":36240,
-    "building_age":100,
-    "energy_consumption_kbtu":123556.0,
-    "predicted_consumption":2010545.9099999999,
-    "error_percent":1527.23
+    "building_name":"LINE RETAIL",
+    "building_type":"Retail",
+    "square_feet":24982,
+    "building_age":61,
+    "energy_consumption_kbtu":335245.0,
+    "predicted_consumption":7477419.2000000002,
+    "error_percent":2130.43
   },
   {
     "building_id":100,
-    "building_name":"1801 RAINIER AVE S (ID25025) - DEMOLISHED",
-    "building_type":"Other",
-    "square_feet":25955,
-    "building_age":98,
-    "energy_consumption_kbtu":64109.0,
-    "predicted_consumption":1017458.92,
-    "error_percent":1487.08
+    "building_name":"FRYE DISTRIBUTION CENTER",
+    "building_type":"Warehouse",
+    "square_feet":119661,
+    "building_age":66,
+    "energy_consumption_kbtu":497864.0,
+    "predicted_consumption":10726625.5999999996,
+    "error_percent":2054.53
   }
 ]

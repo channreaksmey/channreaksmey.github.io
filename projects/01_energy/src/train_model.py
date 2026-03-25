@@ -7,7 +7,7 @@ import json
 import joblib
 from pathlib import Path
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GroupShuffleSplit
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import numpy as np
 
@@ -24,11 +24,18 @@ def train_model(df: pd.DataFrame, feature_cols: list, target_col: str):
     X = df[feature_cols]
     y = df[target_col]
     
-    # Stratified split by building type if possible
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
-    )
+    # Convert target to log scale (handles heavy-tailed energy distribution)
+    # y_log = np.log1p(y)  # log1p = log(1 + x), safe for small values
     
+    # Group split using log-transformed target
+    groups = df['source_building_id']
+    gss = GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    train_idx, test_idx = next(gss.split(X, y, groups=groups))
+
+    X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
+    # y_train_log, y_test_log = y_log.iloc[train_idx], y_log.iloc[test_idx]  # Note: _log suffix
+    y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
+
     # Train with more trees for stability
     model = RandomForestRegressor(
         n_estimators=200,      # More trees for stability
@@ -39,34 +46,52 @@ def train_model(df: pd.DataFrame, feature_cols: list, target_col: str):
         n_jobs=-1              # Use all CPU cores
     )
     
+    # model.fit(X_train, y_train_log)
     model.fit(X_train, y_train)
-    
-    # Evaluate on test set
+
+        # Evaluate on test set (predict in log scale, then invert)
+        # Evaluate on test set (predict in log scale, then invert)
+    # y_pred_log = model.predict(X_test)
+    # y_pred = np.expm1(y_pred_log)           # Invert: expm1 = exp(x) - 1
+    # y_test_actual = np.expm1(y_test_log)    # Invert test labels too
     y_pred = model.predict(X_test)
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-    mae = mean_absolute_error(y_test, y_pred)
-    r2 = r2_score(y_test, y_pred)
+    y_test_actual = y_test
+
+    # Compute metrics on ACTUAL scale (not log)
+    rmse = np.sqrt(mean_squared_error(y_test_actual, y_pred))
+    mae = mean_absolute_error(y_test_actual, y_pred)
+    r2 = r2_score(y_test_actual, y_pred)
     
-    # Calculate MAPE (Mean Absolute Percentage Error)
-    mape = np.mean(np.abs((y_test - y_pred) / y_test)) * 100
+    # Calculate MAPE on actual scale
+    mape = np.mean(np.abs((y_test_actual - y_pred) / y_test_actual)) * 100
+    
+    # Calculate WMAPE (Weighted Mean Absolute Percentage Error)
+    wmape = 100 * np.sum(np.abs(y_test_actual - y_pred)) / np.sum(np.abs(y_test_actual))
+    
+    # Calculate SMAPE (Symmetric Mean Absolute Percentage Error)
+    epsilon = 1e-9
+    smape = 100 * np.mean(2 * np.abs(y_test_actual - y_pred) / (np.abs(y_test_actual) + np.abs(y_pred) + epsilon))
     
     print(f"\nModel Performance (Test Set):")
     print(f"  RMSE: {rmse:,.0f} kBtu")
     print(f"  MAE:  {mae:,.0f} kBtu")
     print(f"  MAPE: {mape:.1f}%")
+    print(f"  WMAPE: {wmape:.1f}%")
+    print(f"  SMAPE: {smape:.1f}%")
     print(f"  R²:   {r2:.3f}")
     
     # Business interpretation
     print(f"\nInterpretation:")
-    print(f"  - Predictions are off by {mape:.0f}% on average")
+    print(f"  - Predictions are off by {wmape:.0f}% on average (WMAPE)")
     print(f"  - Model explains {r2*100:.0f}% of energy variation")
     
-    return model, X.columns.tolist(), {'rmse': rmse, 'mae': mae, 'mape': mape, 'r2': r2}
+    return model, X.columns.tolist(), {'rmse': rmse, 'mae': mae, 'mape': mape, 'wmape': wmape, 'smape': smape, 'r2': r2}
 
 
 def generate_predictions(model, df: pd.DataFrame, feature_cols: list) -> pd.DataFrame:
     """Add predictions to dataframe."""
     df = df.copy()
+    y_pred_log = model.predict(df[feature_cols])
     df['predicted_consumption'] = model.predict(df[feature_cols])
     df['prediction_error'] = df['predicted_consumption'] - df['energy_consumption_kbtu']
     df['error_percent'] = (df['prediction_error'] / df['energy_consumption_kbtu'] * 100)
@@ -82,11 +107,16 @@ def analyze_by_type(df: pd.DataFrame) -> dict:
     analysis = {}
     for btype in df['building_type'].unique():
         subset = df[df['building_type'] == btype]
+        
+        # WMAPE for this type
+        wmape = 100 * np.sum(np.abs(subset['predicted_consumption'] - subset['energy_consumption_kbtu'])) / np.sum(np.abs(subset['energy_consumption_kbtu']))
+        
         analysis[btype] = {
             'count': len(subset),
             'avg_actual': subset['energy_consumption_kbtu'].mean(),
             'avg_predicted': subset['predicted_consumption'].mean(),
-            'mape': subset['abs_error_percent'].mean()
+            'mape': subset['abs_error_percent'].mean(),
+            'wmape': wmape
         }
     return analysis
 
@@ -157,7 +187,7 @@ if __name__ == '__main__':
     df_model = pd.get_dummies(df, columns=['building_type'], prefix='type')
     
     # Features (exclude target and non-feature text fields)
-    exclude = ['building_name', 'address', 'energy_consumption_kbtu']
+    exclude = ['building_name', 'address', 'energy_consumption_kbtu', 'source_building_id', 'data_year']
     feature_cols = [c for c in df_model.columns if c not in exclude]
     print(f"Features: {feature_cols}")
     

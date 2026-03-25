@@ -4,6 +4,8 @@
   "total_buildings": 33096,
   "display_sample": 100,
   "features": [
+    "source_building_id",
+    "data_year",
     "square_feet",
     "building_age",
     "building_type"
@@ -17,5 +19,5 @@
     "Retail",
     "Restaurant"
   ],
-  "date_processed": "2026-03-25T09:59:27.708125"
+  "date_processed": "2026-03-25T12:42:54.013128"
 }

@@ -54,19 +54,21 @@ def select_features(df: pd.DataFrame) -> pd.DataFrame:
     """Select and rename columns for modeling."""
     # Map to simpler column names
     column_map = {
+        'OSEBuildingID': 'source_building_id',
         'PropertyGFATotal': 'square_feet',
         'BuildingAge': 'building_age',
         'EPAPropertyType': 'building_type',
         'SiteEnergyUse(kBtu)': 'energy_consumption_kbtu',
         'BuildingName': 'building_name',
-        'Address': 'address'
+        'Address': 'address',
+        'DataYear': 'data_year'
     }
     
     df = df.rename(columns=column_map)
     
     # Keep only columns we need
-    keep_cols = ['building_name', 'address', 'square_feet', 'building_age', 
-                 'building_type', 'energy_consumption_kbtu']
+    keep_cols = ['source_building_id', 'data_year', 'building_name', 'address', 'square_feet', 
+                 'building_age', 'building_type', 'energy_consumption_kbtu']
     
     df = df[keep_cols].copy()
     
