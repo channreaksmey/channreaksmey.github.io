@@ -28,4 +28,4 @@ dist/
 .env
 .DS_Store
 *.log
-.venv
+.venvprojects/01_energy/data/*.csv

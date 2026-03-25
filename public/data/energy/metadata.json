@@ -1,16 +1,21 @@
 {
+  "dataset": "Seattle Building Energy Benchmarking 2015",
+  "source": "https://data.seattle.gov/Built-Environment/Building-Energy-Benchmarking-Data-2015-Present/teqw-tu6e/about_data",
+  "total_buildings": 33096,
+  "display_sample": 100,
   "features": [
     "square_feet",
     "building_age",
-    "type_Office",
-    "type_Retail",
-    "type_Warehouse"
+    "building_type"
   ],
-  "target": "energy_consumption_kbtu",
-  "n_samples": 14,
   "building_types": [
+    "Hotel",
+    "Other",
+    "School",
     "Office",
+    "Warehouse",
     "Retail",
-    "Warehouse"
-  ]
+    "Restaurant"
+  ],
+  "date_processed": "2026-03-25T09:59:27.708125"
 }

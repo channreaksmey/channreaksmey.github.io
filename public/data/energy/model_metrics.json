@@ -1,22 +1,130 @@
 {
   "model_type": "RandomForestRegressor",
-  "n_estimators": 100,
+  "dataset": "Seattle Building Energy Benchmarking 2015",
+  "n_buildings": 33096,
+  "n_train": 200,
   "features": [
     "square_feet",
     "building_age",
+    "type_Hotel",
     "type_Office",
+    "type_Other",
+    "type_Restaurant",
     "type_Retail",
+    "type_School",
     "type_Warehouse"
   ],
   "feature_importance": {
-    "square_feet": 0.4455,
-    "building_age": 0.2312,
-    "type_Office": 0.2615,
-    "type_Retail": 0.0587,
-    "type_Warehouse": 0.003
+    "square_feet": 0.8302,
+    "building_age": 0.1337,
+    "type_Hotel": 0.0065,
+    "type_Office": 0.0069,
+    "type_Other": 0.0113,
+    "type_Restaurant": 0.0016,
+    "type_Retail": 0.0069,
+    "type_School": 0.0007,
+    "type_Warehouse": 0.0022
   },
-  "metrics": {
-    "rmse": 175987.51782035973,
-    "r2": 0.8843023692491248
-  }
+  "performance": {
+    "rmse": 1916676.3240311097,
+    "mae": 835502.6502066955,
+    "mape": 55.228625695320396,
+    "r2": 0.9202638262064989
+  },
+  "performance_by_type": {
+    "Hotel": {
+      "count": 700,
+      "avg_actual": 8940674.125714285,
+      "avg_predicted": 8712196.422934392,
+      "mape": 30.593526156932977
+    },
+    "Other": {
+      "count": 24175,
+      "avg_actual": 3376551.661302999,
+      "avg_predicted": 3361292.41461795,
+      "mape": 41.88741497125797
+    },
+    "School": {
+      "count": 1335,
+      "avg_actual": 3235899.9760299628,
+      "avg_predicted": 3288459.198749756,
+      "mape": 365.042365494859
+    },
+    "Office": {
+      "count": 4860,
+      "avg_actual": 7567470.430041152,
+      "avg_predicted": 7556505.929725415,
+      "mape": 57.42818820009256
+    },
+    "Warehouse": {
+      "count": 821,
+      "avg_actual": 1662462.6626065774,
+      "avg_predicted": 1790397.268555958,
+      "mape": 48.37549883509119
+    },
+    "Retail": {
+      "count": 1112,
+      "avg_actual": 5910864.006294964,
+      "avg_predicted": 5947630.87117173,
+      "mape": 69.21264116223448
+    },
+    "Restaurant": {
+      "count": 93,
+      "avg_actual": 5774041.612903226,
+      "avg_predicted": 5630570.076829721,
+      "mape": 45.98267705260932
+    }
+  },
+  "sample_predictions": [
+    {
+      "building_id": 1,
+      "building_name": "DEL MAR APTS",
+      "building_type": "Other",
+      "square_feet": 43132,
+      "building_age": 45,
+      "energy_consumption_kbtu": 1228837.0,
+      "predicted_consumption": 1228829.34,
+      "error_percent": -0.0
+    },
+    {
+      "building_id": 2,
+      "building_name": "PARAMOUNT THEATRE",
+      "building_type": "Other",
+      "square_feet": 102761,
+      "building_age": 100,
+      "energy_consumption_kbtu": 6852434.0,
+      "predicted_consumption": 6852386.14,
+      "error_percent": -0.0
+    },
+    {
+      "building_id": 3,
+      "building_name": "GOODWILL BUILDING",
+      "building_type": "Warehouse",
+      "square_feet": 111908,
+      "building_age": 39,
+      "energy_consumption_kbtu": 1555420.0,
+      "predicted_consumption": 1555443.63,
+      "error_percent": 0.0
+    },
+    {
+      "building_id": 4,
+      "building_name": "500 YALE AVENUE NORTH",
+      "building_type": "Office",
+      "square_feet": 141131,
+      "building_age": 17,
+      "energy_consumption_kbtu": 2550169.0,
+      "predicted_consumption": 2550216.51,
+      "error_percent": 0.0
+    },
+    {
+      "building_id": 5,
+      "building_name": "LAKE UNION BUILDING",
+      "building_type": "Office",
+      "square_feet": 156698,
+      "building_age": 56,
+      "energy_consumption_kbtu": 6038778.0,
+      "predicted_consumption": 6038663.16,
+      "error_percent": -0.0
+    }
+  ]
 }
