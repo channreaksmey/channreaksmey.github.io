@@ -15,12 +15,12 @@ const PROJECTS = [
   {
     id: 2,
     title: "E-Commerce Customer Segmentation",
-    description: "K-Means clustering on 100,000+ orders from Brazilian e-commerce. Identifies high-value customer segments for targeted marketing.",
-    status: "In Progress",
-    tags: ["Clustering", "K-Means", "RFM Analysis", "Python"],
-    githubUrl: "https://github.com/channreaksmey/channreaksmey.github.io/tree/main/projects/02_segmentation",
+    description: "K-Means clustering on 95,000+ Brazilian e-commerce orders. RFM analysis identifies 5 customer segments for targeted marketing.",
+    status: "Complete",
+    tags: ["Clustering", "K-Means", "RFM Analysis", "Python", "3D Visualization"],
+    githubUrl: "https://github.com/yourusername/yourusername.github.io/tree/main/projects/02_segmentation",
     demoUrl: "#/projects/segmentation",
-    metrics: {}
+    metrics: { clusters: 5, customers: 95000 }
   },
   {
     id: 3,

@@ -31,10 +31,11 @@ jobs:
         run: |
           pip install pandas scikit-learn matplotlib joblib
 
-      - name: Download Seattle Energy Data
+      - name: Download Datasets
         run: |
           set -euo pipefail
           mkdir -p projects/01_energy/data
+          mkdir -p projects/02_segmentation/data
 
           ZIP="projects/01_energy/data/seattle_energy.zip"
           CSV="projects/01_energy/data/seattle_energy.csv"
@@ -61,10 +62,21 @@ jobs:
           test -s "$CSV" || { echo "Failed to download seattle_energy.csv"; exit 1; }
           echo "Final file: $(wc -l < "$CSV") lines"
           
+          # E-commerce data (Olist dataset from GitHub mirror)
+          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_orders_dataset.csv" \
+              -o projects/02_segmentation/data/orders.csv
+          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_customers_dataset.csv" \
+              -o projects/02_segmentation/data/customers.csv
+          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_order_payments_dataset.csv" \
+              -o projects/02_segmentation/data/payments.csv
+          echo "E-commerce data: $(wc -l < projects/02_segmentation/data/orders.csv) orders"
+
       - name: Run data pipeline
         run: |
           python projects/01_energy/src/preprocess.py
           python projects/01_energy/src/train_model.py
+
+          python projects/02_segmentation/src/preprocess.py
 
       - name: Upload processed data
         uses: actions/upload-artifact@v4
