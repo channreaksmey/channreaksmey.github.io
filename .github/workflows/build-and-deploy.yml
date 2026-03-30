@@ -1,0 +1,85 @@
+name: Build Data & Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          pip install pandas scikit-learn matplotlib joblib
+
+      - name: Run data pipeline
+        run: |
+          python projects/01_energy/src/preprocess.py
+          python projects/01_energy/src/train_model.py
+
+      - name: Upload processed data
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-data
+          path: public/data/
+          retention-days: 1
+
+  build-frontend:
+    runs-on: ubuntu-latest
+    needs: build-data
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download processed data
+        uses: actions/download-artifact@v4
+        with:
+          name: project-data
+          path: public/data/
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-frontend
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

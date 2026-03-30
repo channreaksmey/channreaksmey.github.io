@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import PredictionForm from './PredictionForm'
+import EnergyScatterPlot from './EnergyScatterPlot'
 
 interface Building {
   building_id: number
@@ -105,6 +107,23 @@ export default function EnergyProject() {
               .replace('_', ' ')}
             subtitle="Most predictive factor"
           />
+        </div>
+      )}
+
+      {/* Interactive Prediction Form */}
+      <div className="mt-8">
+        <PredictionForm />
+      </div>
+      
+      {/* Visualization */}
+      {buildings.length > 0 && (
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">Actual vs Predicted</h3>
+          <EnergyScatterPlot buildings={buildings} />
+          <p className="text-sm text-gray-500 mt-2">
+            Log-log scale showing the strong linear relationship between building size and energy use. 
+            Points closer to the dashed line indicate better predictions.
+          </p>
         </div>
       )}
 

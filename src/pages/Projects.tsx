@@ -8,19 +8,19 @@ const PROJECTS = [
     description: "Machine learning model to predict energy usage in commercial buildings based on size, age, and type. Includes interactive demo where you can input building parameters.",
     status: "Complete",
     tags: ["Regression", "Python", "React", "Energy Data"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/channreaksmey/channreaksmey.github.io/tree/main/projects/01_energy",
     demoUrl: "#/projects/energy",
-    metrics: { rmse: 0.45, r2: 0.82 }
+    metrics: { rmse: 146851, r2: 0.997 }
   },
   {
     id: 2,
     title: "E-Commerce Customer Segmentation",
-    description: "Unsupervised learning analysis identifying 5 distinct customer segments from Brazilian e-commerce data. Interactive visualization shows cluster characteristics.",
-    status: "Planned",
-    tags: ["Clustering", "KMeans", "Visualization", "Retail"],
-    githubUrl: "#",
+    description: "K-Means clustering on 100,000+ orders from Brazilian e-commerce. Identifies high-value customer segments for targeted marketing.",
+    status: "In Progress",
+    tags: ["Clustering", "K-Means", "RFM Analysis", "Python"],
+    githubUrl: "https://github.com/channreaksmey/channreaksmey.github.io/tree/main/projects/02_segmentation",
     demoUrl: "#",
-    metrics: { silhouette: 0.68 }
+    metrics: {}
   },
   {
     id: 3,
