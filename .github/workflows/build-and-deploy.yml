@@ -34,9 +34,20 @@ jobs:
       - name: Download Seattle Energy Data
         run: |
           mkdir -p projects/01_energy/data
-          curl -L "https://data.seattle.gov/api/views/2bpz-gwpy/rows.csv?accessType=DOWNLOAD" \
+          # Kaggle dataset via direct link (more reliable than Socrata)
+          curl -L "https://www.kaggle.com/datasets/city-of-seattle/sea-building-energy-benchmarking/download" \
+               -o projects/01_energy/data/seattle_energy.zip || \
+          # Fallback: Socrata API with new ID
+          curl -L "https://data.seattle.gov/resource/teqw-tu6e.csv?\$limit=10000" \
                -o projects/01_energy/data/seattle_energy.csv
-          echo "Downloaded $(wc -l < projects/01_energy/data/seattle_energy.csv) lines"
+          
+          # If we got a zip, extract it
+          if [ -f projects/01_energy/data/seattle_energy.zip ]; then
+            unzip -o projects/01_energy/data/seattle_energy.zip -d projects/01_energy/data/
+            mv projects/01_energy/data/*.csv projects/01_energy/data/seattle_energy.csv
+          fi
+          
+          echo "Final file: $(wc -l < projects/01_energy/data/seattle_energy.csv) lines"
 
       - name: Run data pipeline
         run: |

@@ -19,7 +19,7 @@ const PROJECTS = [
     status: "In Progress",
     tags: ["Clustering", "K-Means", "RFM Analysis", "Python"],
     githubUrl: "https://github.com/channreaksmey/channreaksmey.github.io/tree/main/projects/02_segmentation",
-    demoUrl: "#",
+    demoUrl: "#/projects/segmentation",
     metrics: {}
   },
   {
