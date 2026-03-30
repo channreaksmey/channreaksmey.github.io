@@ -29,7 +29,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install pandas scikit-learn matplotlib joblib
+          pip install pandas scikit-learn matplotlib joblib kaggle
 
       - name: Download Datasets
         run: |
@@ -62,14 +62,39 @@ jobs:
           test -s "$CSV" || { echo "Failed to download seattle_energy.csv"; exit 1; }
           echo "Final file: $(wc -l < "$CSV") lines"
           
-          # E-commerce data (Olist dataset from GitHub mirror)
-          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_orders_dataset.csv" \
-              -o projects/02_segmentation/data/orders.csv
-          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_customers_dataset.csv" \
-              -o projects/02_segmentation/data/customers.csv
-          curl -fsSL "https://raw.githubusercontent.com/olist/workshop-olist/main/datasets/olist_order_payments_dataset.csv" \
-              -o projects/02_segmentation/data/payments.csv
+          mkdir -p "$HOME/.kaggle"
+          cat > "$HOME/.kaggle/kaggle.json" <<EOF
+          {"username":"${KAGGLE_USERNAME}","key":"$KAGGLE_KEY"}
+          EOF
+          chmod 600 "$HOME/.kaggle/kaggle.json"
+
+          mkdir -p "$HOME/.kaggle"
+          cat > "$HOME/.kaggle/kaggle.json" <<EOF
+          {"username":"${KAGGLE_USERNAME}","key":"${KAGGLE_KEY}"}
+          EOF
+          chmod 600 "$HOME/.kaggle/kaggle.json"
+
+          # Download Olist dataset from Kaggle
+          kaggle datasets download -d olistbr/brazilian-ecommerce -p projects/02_segmentation/data --force
+          
+          # Unzip
+          OLIST_ZIP="projects/02_segmentation/data/brazilian-ecommerce.zip"
+          unzip -o "$OLIST_ZIP" -d projects/02_segmentation/data
+          rm "$OLIST_ZIP"
+
+          # Map Kaggle filenames to your pipeline filenames
+          cp projects/02_segmentation/data/olist_orders_dataset.csv projects/02_segmentation/data/orders.csv
+          cp projects/02_segmentation/data/olist_customers_dataset.csv projects/02_segmentation/data/customers.csv
+          cp projects/02_segmentation/data/olist_order_payments_dataset.csv projects/02_segmentation/data/payments.csv
+
+          # Verify all files exist
+          test -s projects/02_segmentation/data/orders.csv || { echo "Missing orders.csv"; exit 1; }
+          test -s projects/02_segmentation/data/customers.csv || { echo "Missing customers.csv"; exit 1; }
+          test -s projects/02_segmentation/data/payments.csv || { echo "Missing payments.csv"; exit 1; }
           echo "E-commerce data: $(wc -l < projects/02_segmentation/data/orders.csv) orders"
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
 
       - name: Run data pipeline
         run: |
