@@ -1,802 +1,162 @@
 [
   {
     "building_id":1,
-    "building_name":"MAYFLOWER PARK HOTEL",
-    "building_type":"Hotel",
-    "square_feet":88434,
-    "building_age":99,
-    "energy_consumption_kbtu":7113958.0
+    "building_name":"KALBERG BUILDING",
+    "square_feet":20760,
+    "building_age":98,
+    "energy_consumption_kbtu":950078.0,
+    "energy_intensity":45.7648362235
   },
   {
     "building_id":2,
-    "building_name":"PARAMOUNT HOTEL",
-    "building_type":"Hotel",
-    "square_feet":103566,
-    "building_age":30,
-    "energy_consumption_kbtu":6330664.0
+    "building_name":"UNION BAY PLAZA",
+    "square_feet":22135,
+    "building_age":81,
+    "energy_consumption_kbtu":1261963.0,
+    "energy_intensity":57.012107522
   },
   {
     "building_id":3,
-    "building_name":"HOTEL MAX",
-    "building_type":"Hotel",
-    "square_feet":61320,
-    "building_age":100,
-    "energy_consumption_kbtu":5273981.0
+    "building_name":"HOWARD BUILDING",
+    "square_feet":23563,
+    "building_age":124,
+    "energy_consumption_kbtu":471310.0,
+    "energy_intensity":20.0021219709
   },
   {
     "building_id":4,
-    "building_name":"WARWICK SEATTLE HOTEL",
-    "building_type":"Hotel",
-    "square_feet":175580,
-    "building_age":46,
-    "energy_consumption_kbtu":11983959.0
+    "building_name":"SANBORN BUILDING",
+    "square_feet":23032,
+    "building_age":125,
+    "energy_consumption_kbtu":1180412.0,
+    "energy_intensity":51.2509551928
   },
   {
     "building_id":5,
-    "building_name":"WEST PRECINCT (SEATTLE POLICE)",
-    "building_type":"Other",
-    "square_feet":97288,
-    "building_age":27,
-    "energy_consumption_kbtu":8515194.0
+    "building_name":"CITY VIEW LESCHI",
+    "square_feet":26583,
+    "building_age":22,
+    "energy_consumption_kbtu":988964.0,
+    "energy_intensity":37.2028740172
   },
   {
     "building_id":6,
-    "building_name":"CAMLIN WORLDMARK HOTEL",
-    "building_type":"Hotel",
-    "square_feet":83008,
-    "building_age":100,
-    "energy_consumption_kbtu":8676845.0
+    "building_name":"COMPTON BUILDING",
+    "square_feet":28800,
+    "building_age":118,
+    "energy_consumption_kbtu":1106356.0,
+    "energy_intensity":38.4151388889
   },
   {
     "building_id":7,
-    "building_name":"PARAMOUNT THEATRE",
-    "building_type":"Other",
-    "square_feet":102761,
-    "building_age":100,
-    "energy_consumption_kbtu":8510394.0
+    "building_name":"DEL MAR APTS",
+    "square_feet":43132,
+    "building_age":45,
+    "energy_consumption_kbtu":1228837.0,
+    "energy_intensity":28.4901465269
   },
   {
     "building_id":8,
-    "building_name":"COURTYARD BY MARRIOTT - PIONEER SQ",
-    "building_type":"Hotel",
-    "square_feet":163984,
-    "building_age":122,
-    "energy_consumption_kbtu":14715816.0
+    "building_name":"EAST LAKE TOWERS",
+    "square_feet":33176,
+    "building_age":39,
+    "energy_consumption_kbtu":1426280.0,
+    "energy_intensity":42.9913190258
   },
   {
     "building_id":9,
-    "building_name":"LYON BUILDING",
-    "building_type":"Other",
-    "square_feet":63712,
-    "building_age":116,
-    "energy_consumption_kbtu":3194788.0
+    "building_name":"MAGNOLIA RIDGE CONDOMINIUM",
+    "square_feet":32452,
+    "building_age":58,
+    "energy_consumption_kbtu":335477.0,
+    "energy_intensity":10.3376371256
   },
   {
     "building_id":10,
-    "building_name":"HOTEL MONACO",
-    "building_type":"Hotel",
-    "square_feet":153163,
-    "building_age":57,
-    "energy_consumption_kbtu":10565442.0
+    "building_name":"BILL PIERRE FORD",
+    "square_feet":37377,
+    "building_age":79,
+    "energy_consumption_kbtu":3513967.0,
+    "energy_intensity":94.0141530888
   },
   {
     "building_id":11,
-    "building_name":"W SEATTLE HOTEL",
-    "building_type":"Hotel",
-    "square_feet":333176,
-    "building_age":28,
-    "energy_consumption_kbtu":25207774.0
+    "building_name":"BELMONT COURT APARTMENTS",
+    "square_feet":49649,
+    "building_age":26,
+    "energy_consumption_kbtu":833938.0,
+    "energy_intensity":16.7966726419
   },
   {
     "building_id":12,
-    "building_name":"EXECUTIVE HOTEL PACIFIC",
-    "building_type":"Hotel",
-    "square_feet":65009,
-    "building_age":98,
-    "energy_consumption_kbtu":4707694.0
+    "building_name":"FIRST & CEDAR BUILDING",
+    "square_feet":61825,
+    "building_age":52,
+    "energy_consumption_kbtu":4735248.0,
+    "energy_intensity":76.5911524464
   },
   {
     "building_id":13,
-    "building_name":"CROWNE PLAZA",
-    "building_type":"Hotel",
-    "square_feet":353111,
-    "building_age":46,
-    "energy_consumption_kbtu":15684455.0
+    "building_name":"PLYMOUTH ON FIRST HILL",
+    "square_feet":43459,
+    "building_age":8,
+    "energy_consumption_kbtu":2647646.0,
+    "energy_intensity":60.9228468211
   },
   {
     "building_id":14,
-    "building_name":"HOTEL VINTAGE PARK",
-    "building_type":"Hotel",
-    "square_feet":67390,
-    "building_age":104,
-    "energy_consumption_kbtu":4462021.0
+    "building_name":"BRIGHT HORIZONS",
+    "square_feet":45000,
+    "building_age":98,
+    "energy_consumption_kbtu":1965399.0,
+    "energy_intensity":43.6755333333
   },
   {
     "building_id":15,
-    "building_name":"CENTRAL - SEATTLE PUBLIC LIBRARY",
-    "building_type":"Other",
-    "square_feet":412000,
-    "building_age":22,
-    "energy_consumption_kbtu":13818198.0
+    "building_name":"SALMON BAY WATERWAY",
+    "square_feet":44639,
+    "building_age":69,
+    "energy_consumption_kbtu":1189579.0,
+    "energy_intensity":26.6488720625
   },
   {
     "building_id":16,
-    "building_name":"DOWNTOWN SEATTLE YMCA",
-    "building_type":"Other",
-    "square_feet":103911,
-    "building_age":96,
-    "energy_consumption_kbtu":5085859.0
+    "building_name":"PIONEER BUILDING",
+    "square_feet":89355,
+    "building_age":126,
+    "energy_consumption_kbtu":4178234.0,
+    "energy_intensity":46.7599350904
   },
   {
     "building_id":17,
-    "building_name":"RENAISSANCE MADISON HOTEL",
-    "building_type":"Hotel",
-    "square_feet":460902,
-    "building_age":43,
-    "energy_consumption_kbtu":28976404.0
+    "building_name":"THE PERRY- FIRST HILL TOWER",
+    "square_feet":235046,
+    "building_age":8,
+    "energy_consumption_kbtu":4203804.0,
+    "energy_intensity":17.8850267607
   },
   {
     "building_id":18,
-    "building_name":"RAINIER CLUB (HISTORICAL LANDMARK)",
-    "building_type":"Other",
-    "square_feet":57452,
-    "building_age":119,
-    "energy_consumption_kbtu":6834993.0
+    "building_name":"5TH & PINE",
+    "square_feet":88717,
+    "building_age":53,
+    "energy_consumption_kbtu":9567585.0,
+    "energy_intensity":107.843874342
   },
   {
     "building_id":19,
-    "building_name":"ARCTIC CLUB HOTEL - SEATTLE",
-    "building_type":"Hotel",
-    "square_feet":104352,
-    "building_age":110,
-    "energy_consumption_kbtu":8722299.0
+    "building_name":"THE COBB APARTMENTS",
+    "square_feet":123897,
+    "building_age":116,
+    "energy_consumption_kbtu":7205203.0,
+    "energy_intensity":58.1547817946
   },
   {
     "building_id":20,
-    "building_name":"KING COUNTY COURTHOUSE",
-    "building_type":"Other",
-    "square_feet":540360,
-    "building_age":110,
-    "energy_consumption_kbtu":50227788.0
-  },
-  {
-    "building_id":21,
-    "building_name":"KING COUNTY CORRECTIONAL FACILITY",
-    "building_type":"Other",
-    "square_feet":385274,
-    "building_age":41,
-    "energy_consumption_kbtu":39738460.0
-  },
-  {
-    "building_id":22,
-    "building_name":"GRAHAM HILL ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":56228,
-    "building_age":65,
-    "energy_consumption_kbtu":1625718.0
-  },
-  {
-    "building_id":23,
-    "building_name":"WATERTOWN HOTEL",
-    "building_type":"Hotel",
-    "square_feet":88592,
-    "building_age":25,
-    "energy_consumption_kbtu":3610078.0
-  },
-  {
-    "building_id":24,
-    "building_name":"CORNISH (Main Campus Center)",
-    "building_type":"Other",
-    "square_feet":126593,
-    "building_age":98,
-    "energy_consumption_kbtu":8797906.0
-  },
-  {
-    "building_id":25,
-    "building_name":"SPRINGHILL SUITES SEATTLE DOWNTOWN",
-    "building_type":"Hotel",
-    "square_feet":171866,
-    "building_age":25,
-    "energy_consumption_kbtu":8302082.0
-  },
-  {
-    "building_id":26,
-    "building_name":"MEANY MIDDLE SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":126351,
-    "building_age":71,
-    "energy_consumption_kbtu":4785164.0
-  },
-  {
-    "building_id":27,
-    "building_name":"HOTEL FIVE",
-    "building_type":"Hotel",
-    "square_feet":68410,
-    "building_age":48,
-    "energy_consumption_kbtu":3390906.0
-  },
-  {
-    "building_id":28,
-    "building_name":"JANE ADDAMS MIDDLE (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":160645,
-    "building_age":77,
-    "energy_consumption_kbtu":7020056.0
-  },
-  {
-    "building_id":29,
-    "building_name":"JOHN HAY ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":51582,
-    "building_age":37,
-    "energy_consumption_kbtu":1373992.0
-  },
-  {
-    "building_id":30,
-    "building_name":"GOOD SHEPHERD CENTER",
-    "building_type":"Office",
-    "square_feet":87262,
-    "building_age":120,
-    "energy_consumption_kbtu":4146749.0
-  },
-  {
-    "building_id":31,
-    "building_name":"SILVER CLOUD INN UNIVERSITY",
-    "building_type":"Hotel",
-    "square_feet":81871,
-    "building_age":32,
-    "energy_consumption_kbtu":5320308.0
-  },
-  {
-    "building_id":32,
-    "building_name":"2746 NE 45TH ST - PUBLIC STORAGE",
-    "building_type":"Warehouse",
-    "square_feet":26225,
-    "building_age":71,
-    "energy_consumption_kbtu":216227.0
-  },
-  {
-    "building_id":33,
-    "building_name":"LAWTON ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":54986,
-    "building_age":36,
-    "energy_consumption_kbtu":1715797.0
-  },
-  {
-    "building_id":34,
-    "building_name":"ECKSTEIN MIDDLE (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":175565,
-    "building_age":76,
-    "energy_consumption_kbtu":6779131.0
-  },
-  {
-    "building_id":35,
-    "building_name":"EL CENTRO DE LA RAZA",
-    "building_type":"Office",
-    "square_feet":52554,
-    "building_age":126,
-    "energy_consumption_kbtu":2477294.0
-  },
-  {
-    "building_id":36,
-    "building_name":"BLANCHET HIGH SCHOOL",
-    "building_type":"School",
-    "square_feet":175015,
-    "building_age":72,
-    "energy_consumption_kbtu":8684954.0
-  },
-  {
-    "building_id":37,
-    "building_name":"VINE ST MINI STORAGE",
-    "building_type":"Warehouse",
-    "square_feet":70586,
-    "building_age":115,
-    "energy_consumption_kbtu":1265440.0
-  },
-  {
-    "building_id":38,
-    "building_name":"Coast Seattle Downtown Hotel by APA",
-    "building_type":"Hotel",
-    "square_feet":126240,
-    "building_age":57,
-    "energy_consumption_kbtu":12269666.0
-  },
-  {
-    "building_id":39,
-    "building_name":"5TH & PINE",
-    "building_type":"Office",
-    "square_feet":88717,
-    "building_age":53,
-    "energy_consumption_kbtu":5126680.0
-  },
-  {
-    "building_id":40,
-    "building_name":"CENTURY SQUARE RETAIL",
-    "building_type":"Other",
-    "square_feet":57428,
-    "building_age":106,
-    "energy_consumption_kbtu":945387.0
-  },
-  {
-    "building_id":41,
-    "building_name":"GIBRALTAR TOWER",
-    "building_type":"Office",
-    "square_feet":59400,
-    "building_age":116,
-    "energy_consumption_kbtu":1419809.0
-  },
-  {
-    "building_id":42,
-    "building_name":"MANN BUILDING\/WILD GINGER\/TRIPLE DOOR",
-    "building_type":"Other",
-    "square_feet":64597,
-    "building_age":100,
-    "energy_consumption_kbtu":10571392.0
-  },
-  {
-    "building_id":43,
-    "building_name":"PALIHOTEL",
-    "building_type":"Hotel",
-    "square_feet":50510,
-    "building_age":126,
-    "energy_consumption_kbtu":4806724.0
-  },
-  {
-    "building_id":44,
-    "building_name":"HOTEL THEODORE (ROOSEVELT)",
-    "building_type":"Hotel",
-    "square_feet":98634,
-    "building_age":96,
-    "energy_consumption_kbtu":7883218.0
-  },
-  {
-    "building_id":45,
-    "building_name":"INN AT THE MARKET",
-    "building_type":"Hotel",
-    "square_feet":71150,
-    "building_age":41,
-    "energy_consumption_kbtu":5869980.0
-  },
-  {
-    "building_id":46,
-    "building_name":"MOORE HOTEL & THEATRE",
-    "building_type":"Hotel",
-    "square_feet":122810,
-    "building_age":118,
-    "energy_consumption_kbtu":3574054.0
-  },
-  {
-    "building_id":47,
-    "building_name":"HOLIDAY INN - SEATTLE",
-    "building_type":"Hotel",
-    "square_feet":150453,
-    "building_age":26,
-    "energy_consumption_kbtu":6203145.0
-  },
-  {
-    "building_id":48,
-    "building_name":"FAIRFIELD INN",
-    "building_type":"Hotel",
-    "square_feet":116300,
-    "building_age":29,
-    "energy_consumption_kbtu":4666302.0
-  },
-  {
-    "building_id":49,
-    "building_name":"HOMEWOOD SUITES HOTEL - SEATTLE",
-    "building_type":"Hotel",
-    "square_feet":155602,
-    "building_age":28,
-    "energy_consumption_kbtu":6941638.0
-  },
-  {
-    "building_id":50,
-    "building_name":"SEATTLE HEBREW ACADEMY",
-    "building_type":"School",
-    "square_feet":56072,
-    "building_age":115,
-    "energy_consumption_kbtu":3687303.0
-  },
-  {
-    "building_id":51,
-    "building_name":"FOUR POINTS SHERATON SEATTLE CENTER",
-    "building_type":"Hotel",
-    "square_feet":122942,
-    "building_age":27,
-    "energy_consumption_kbtu":2949498.0
-  },
-  {
-    "building_id":52,
-    "building_name":"WA DEPT OF SOCIAL & HEALTH SERVICES (DSHS)",
-    "building_type":"Office",
-    "square_feet":54984,
-    "building_age":64,
-    "energy_consumption_kbtu":2982075.0
-  },
-  {
-    "building_id":53,
-    "building_name":"PROVIDENCE MT ST VINCENT",
-    "building_type":"Other",
-    "square_feet":371257,
-    "building_age":104,
-    "energy_consumption_kbtu":43189372.0
-  },
-  {
-    "building_id":54,
-    "building_name":"THE BROADVIEW CENTER",
-    "building_type":"Other",
-    "square_feet":93397,
-    "building_age":56,
-    "energy_consumption_kbtu":11619583.0
-  },
-  {
-    "building_id":55,
-    "building_name":"SCCA - ALLIANCE HOUSE",
-    "building_type":"Hotel",
-    "square_feet":84103,
-    "building_age":18,
-    "energy_consumption_kbtu":3514683.0
-  },
-  {
-    "building_id":56,
-    "building_name":"ARBOR HEIGHTS ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":78972,
-    "building_age":10,
-    "energy_consumption_kbtu":2991425.0
-  },
-  {
-    "building_id":57,
-    "building_name":"POLYCLINIC MEDICAL OFFICE (NORTH & SOUTH)",
-    "building_type":"Other",
-    "square_feet":329489,
-    "building_age":61,
-    "energy_consumption_kbtu":13926587.0
-  },
-  {
-    "building_id":58,
-    "building_name":"SORRENTO HOTEL",
-    "building_type":"Hotel",
-    "square_feet":76631,
-    "building_age":118,
-    "energy_consumption_kbtu":7350316.0
-  },
-  {
-    "building_id":59,
-    "building_name":"BLOODWORKS NW CENTRAL SEATTLE",
-    "building_type":"Office",
-    "square_feet":121099,
-    "building_age":43,
-    "energy_consumption_kbtu":13622136.0
-  },
-  {
-    "building_id":60,
-    "building_name":"CITY PLACE III (Obidos\/Rufus)",
-    "building_type":"Office",
-    "square_feet":438093,
-    "building_age":16,
-    "energy_consumption_kbtu":12568686.0
-  },
-  {
-    "building_id":61,
-    "building_name":"MARRIOTT RESIDENCE INN",
-    "building_type":"Hotel",
-    "square_feet":282863,
-    "building_age":36,
-    "energy_consumption_kbtu":16511179.0
-  },
-  {
-    "building_id":62,
-    "building_name":"BAGLEY WRIGHT THEATER (Rep) - SEATTLE CENTER",
-    "building_type":"Other",
-    "square_feet":65127,
-    "building_age":64,
-    "energy_consumption_kbtu":4897920.0
-  },
-  {
-    "building_id":63,
-    "building_name":"ARMORY - SEATTLE CENTER",
-    "building_type":"Other",
-    "square_feet":396085,
-    "building_age":88,
-    "energy_consumption_kbtu":9726848.0
-  },
-  {
-    "building_id":64,
-    "building_name":"CITY PLACE IV (Ruby\/Dawson)",
-    "building_type":"Office",
-    "square_feet":571329,
-    "building_age":16,
-    "energy_consumption_kbtu":27352684.0
-  },
-  {
-    "building_id":65,
-    "building_name":"EXHIBITION HALL - SEATTLE CENTER",
-    "building_type":"Other",
-    "square_feet":52000,
-    "building_age":64,
-    "energy_consumption_kbtu":3084492.0
-  },
-  {
-    "building_id":66,
-    "building_name":"MCCAW HALL - SEATTLE CENTER",
-    "building_type":"Other",
-    "square_feet":262048,
-    "building_age":98,
-    "energy_consumption_kbtu":15442383.0
-  },
-  {
-    "building_id":67,
-    "building_name":"KCTS 9",
-    "building_type":"Other",
-    "square_feet":66240,
-    "building_age":40,
-    "energy_consumption_kbtu":2004687.0
-  },
-  {
-    "building_id":68,
-    "building_name":"BILL & MELINDA GATES FOUNDATION",
-    "building_type":"Office",
-    "square_feet":920598,
-    "building_age":16,
-    "energy_consumption_kbtu":36929060.0
-  },
-  {
-    "building_id":69,
-    "building_name":"SCRIPPS BUILDING - 221 FIRST AVENUE WEST",
-    "building_type":"Office",
-    "square_feet":76213,
-    "building_age":56,
-    "energy_consumption_kbtu":3613725.0
-  },
-  {
-    "building_id":70,
-    "building_name":"THE MEDITERRANEAN INN",
-    "building_type":"Hotel",
-    "square_feet":127200,
-    "building_age":24,
-    "energy_consumption_kbtu":4868459.0
-  },
-  {
-    "building_id":71,
-    "building_name":"UNIVERSITY INN",
-    "building_type":"Hotel",
-    "square_feet":71403,
-    "building_age":64,
-    "energy_consumption_kbtu":3293400.0
-  },
-  {
-    "building_id":72,
-    "building_name":"PATHFINDER\/COOPER SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":75364,
-    "building_age":27,
-    "energy_consumption_kbtu":2137819.0
-  },
-  {
-    "building_id":73,
-    "building_name":"ST JOSEPH K-8 SCHOOL",
-    "building_type":"School",
-    "square_feet":67743,
-    "building_age":103,
-    "energy_consumption_kbtu":2976746.0
-  },
-  {
-    "building_id":74,
-    "building_name":"HOLY NAMES ACADEMY",
-    "building_type":"School",
-    "square_feet":168239,
-    "building_age":118,
-    "energy_consumption_kbtu":5838604.0
-  },
-  {
-    "building_id":75,
-    "building_name":"THE 2100 BUILDING",
-    "building_type":"Office",
-    "square_feet":99433,
-    "building_age":23,
-    "energy_consumption_kbtu":3675864.0
-  },
-  {
-    "building_id":76,
-    "building_name":"MUIR ELEMENTARY SCHOOL(SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":60725,
-    "building_age":35,
-    "energy_consumption_kbtu":1958595.0
-  },
-  {
-    "building_id":77,
-    "building_name":"ORCA AT WHITWORTH ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":59955,
-    "building_age":37,
-    "energy_consumption_kbtu":1695354.0
-  },
-  {
-    "building_id":78,
-    "building_name":"MCCLURE MIDDLE (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":93218,
-    "building_age":62,
-    "energy_consumption_kbtu":2938450.0
-  },
-  {
-    "building_id":79,
-    "building_name":"CENTURYLINK: LAKEVIEW MAIN",
-    "building_type":"Other",
-    "square_feet":56521,
-    "building_age":85,
-    "energy_consumption_kbtu":5176539.0
-  },
-  {
-    "building_id":80,
-    "building_name":"ROOSEVELT SQUARE",
-    "building_type":"Retail",
-    "square_feet":228385,
-    "building_age":97,
-    "energy_consumption_kbtu":12806470.0
-  },
-  {
-    "building_id":81,
-    "building_name":"KING COUNTY- MARY PILGRIM HOUSING",
-    "building_type":"Other",
-    "square_feet":51390,
-    "building_age":25,
-    "energy_consumption_kbtu":2207853.0
-  },
-  {
-    "building_id":82,
-    "building_name":"BROADVIEW THOMSON K-8 (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":131013,
-    "building_age":63,
-    "energy_consumption_kbtu":3949633.0
-  },
-  {
-    "building_id":83,
-    "building_name":"INGRAHAM HIGH (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":245587,
-    "building_age":67,
-    "energy_consumption_kbtu":11509496.0
-  },
-  {
-    "building_id":84,
-    "building_name":"KING COUNTY- NORTHGATE HOUSING",
-    "building_type":"Other",
-    "square_feet":69138,
-    "building_age":24,
-    "energy_consumption_kbtu":2986404.0
-  },
-  {
-    "building_id":85,
-    "building_name":"B F DAY ELEMENTARY (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":66588,
-    "building_age":35,
-    "energy_consumption_kbtu":2039050.0
-  },
-  {
-    "building_id":86,
-    "building_name":"HUGHES ELEMENTARY SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":44324,
-    "building_age":100,
-    "energy_consumption_kbtu":1946471.0
-  },
-  {
-    "building_id":87,
-    "building_name":"SEATTLE PACIFIC UNIVERSITY - Royal Brougham Pavilion",
-    "building_type":"Other",
-    "square_feet":82746,
-    "building_age":99,
-    "energy_consumption_kbtu":5325844.0
-  },
-  {
-    "building_id":88,
-    "building_name":"ALEXIS HOTEL",
-    "building_type":"Hotel",
-    "square_feet":182237,
-    "building_age":122,
-    "energy_consumption_kbtu":5531380.0
-  },
-  {
-    "building_id":89,
-    "building_name":"BENAROYA HALL",
-    "building_type":"Other",
-    "square_feet":174000,
-    "building_age":28,
-    "energy_consumption_kbtu":14148573.0
-  },
-  {
-    "building_id":90,
-    "building_name":"SWEDISH MEDICAL CENTER BALLARD - CAMPUS",
-    "building_type":"Other",
-    "square_feet":451526,
-    "building_age":72,
-    "energy_consumption_kbtu":54483372.0
-  },
-  {
-    "building_id":91,
-    "building_name":"WEST WOODLAND PARK ELEMENTARY (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":55513,
-    "building_age":35,
-    "energy_consumption_kbtu":1773472.0
-  },
-  {
-    "building_id":92,
-    "building_name":"FIRE STATION 10\/FAC\/EOC",
-    "building_type":"Other",
-    "square_feet":61156,
-    "building_age":20,
-    "energy_consumption_kbtu":8959962.0
-  },
-  {
-    "building_id":93,
-    "building_name":"WING LUKE MUSEUM\/KONG YICK BLDG.",
-    "building_type":"Other",
-    "square_feet":72820,
-    "building_age":116,
-    "energy_consumption_kbtu":1489704.0
-  },
-  {
-    "building_id":94,
-    "building_name":"HAMPTON INN & SUITES",
-    "building_type":"Hotel",
-    "square_feet":162222,
-    "building_age":30,
-    "energy_consumption_kbtu":7137895.0
-  },
-  {
-    "building_id":95,
-    "building_name":"FRANKLIN HIGH SCHOOL (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":289588,
-    "building_age":36,
-    "energy_consumption_kbtu":6922016.0
-  },
-  {
-    "building_id":96,
-    "building_name":"SEATTLE CENTRAL COMMUNITY COLLEGE MASTER CAMPUS ID (Benchmarking)",
-    "building_type":"Other",
-    "square_feet":122976,
-    "building_age":101,
-    "energy_consumption_kbtu":49992956.0
-  },
-  {
-    "building_id":97,
-    "building_name":"SOUTH SEATTLE COLLEGE - CAMPUS MASTER ID",
-    "building_type":"Other",
-    "square_feet":529343,
-    "building_age":56,
-    "energy_consumption_kbtu":27219828.0
-  },
-  {
-    "building_id":98,
-    "building_name":"SEATTLE CHILDREN'S HOSPITAL (ADMIN BLDG)",
-    "building_type":"Office",
-    "square_feet":96300,
-    "building_age":24,
-    "energy_consumption_kbtu":7624784.0
-  },
-  {
-    "building_id":99,
-    "building_name":"CSC Vehicle Maintenance (E)",
-    "building_type":"Other",
-    "square_feet":67356,
-    "building_age":76,
-    "energy_consumption_kbtu":5323700.0
-  },
-  {
-    "building_id":100,
-    "building_name":"GARFIELD HIGH (SPS-DISTRICT)",
-    "building_type":"School",
-    "square_feet":254523,
-    "building_age":18,
-    "energy_consumption_kbtu":10895698.0
+    "building_name":"MYSA APARTMENTS",
+    "square_feet":100435,
+    "building_age":8,
+    "energy_consumption_kbtu":3790388.0,
+    "energy_intensity":37.7397122517
   }
 ]
