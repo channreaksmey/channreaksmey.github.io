@@ -17,18 +17,33 @@ def _norm_col(name: str) -> str:
 def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Map Socrata/Kaggle column variants to canonical names used downstream."""
     aliases = {
-
+        "SiteEnergyUse(kBtu)": ["siteenergyuse_kbtu", "siteenergyusekbtu"],
+        "PropertyGFATotal": ["propertygfatotal"],
+        "YearBuilt": ["yearbuilt"],
+        "EPAPropertyType": ["epapropertytype"],
+        "ENERGYSTARScore": ["energystarscore"],
+        "BuildingName": ["buildingname"],
+        "Address": ["address"],
     }
     current = {_norm_col(c): c for c in df.columns}
     rename_map = {}
     
-    for target, candidtes in aliases.items():
-        df = df.rename(columns=rename_map)
-        required = ["SiteEnergyUse(kBtu)", "PropertyGFATotal", "YearBuilt", "EPAPropertyType"]
-        missing = [c for c in required if c not in df.columns]
+    for target, candidates in aliases.items():
+        for candidate in [target] + candidates:
+            key = _norm_col(candidate)
+            if key in current:
+                rename_map[current[key]] = target
+                break
 
-        if missing:
-            raise KeyError(f"Missing required columns after normalization: {missing}")
+    df = df.rename(columns=rename_map)
+
+    required = ["SiteEnergyUse(kBtu)", "PropertyGFATotal", "YearBuilt", "EPAPropertyType"]
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        raise KeyError(
+            f"Missing required columns after normalization: {missing}. "
+            f"Available columns: {list(df.columns)}"
+        )
     
     return df
     
