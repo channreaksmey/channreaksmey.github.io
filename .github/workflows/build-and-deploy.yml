@@ -33,22 +33,34 @@ jobs:
 
       - name: Download Seattle Energy Data
         run: |
+          set -euo pipefail
           mkdir -p projects/01_energy/data
-          # Kaggle dataset via direct link (more reliable than Socrata)
-          curl -L "https://www.kaggle.com/datasets/city-of-seattle/sea-building-energy-benchmarking/download" \
-               -o projects/01_energy/data/seattle_energy.zip || \
-          # Fallback: Socrata API with new ID
-          curl -L "https://data.seattle.gov/resource/teqw-tu6e.csv?\$limit=10000" \
-               -o projects/01_energy/data/seattle_energy.csv
-          
-          # If we got a zip, extract it
-          if [ -f projects/01_energy/data/seattle_energy.zip ]; then
-            unzip -o projects/01_energy/data/seattle_energy.zip -d projects/01_energy/data/
-            mv projects/01_energy/data/*.csv projects/01_energy/data/seattle_energy.csv
-          fi
-          
-          echo "Final file: $(wc -l < projects/01_energy/data/seattle_energy.csv) lines"
 
+          ZIP="projects/01_energy/data/seattle_energy.zip"
+          CSV="projects/01_energy/data/seattle_energy.csv"
+          rm -f "$ZIP" "$CSV"
+
+          echo "Trying Kaggle..."
+          curl -fsSL "https://www.kaggle.com/datasets/city-of-seattle/sea-building-energy-benchmarking/download" -o "$ZIP" || true
+          
+          if [ -s "$ZIP" ] && unzip -tq "$ZIP" >/dev/null 2>&1; then
+            unzip -o "$ZIP" -d projects/01_energy/data/
+            first_csv="$(find projects/01_energy/data -maxdepth 1 -name "*.csv" | head -n 1 || true)"
+            if [ -n "$first_csv" ]; then
+              mv "$first_csv" "$CSV"
+            fi
+          else
+            echo "Kaggle file is not a valid zip (likely auth page). Falling back to Socrata."
+            rm -f "$ZIP"
+          fi
+
+          if [ ! -s "$CSV" ]; then
+            curl -fsSL "https://data.seattle.gov/resource/teqw-tu6e.csv?\$limit=50000" -o "$CSV"
+          fi
+
+          test -s "$CSV" || { echo "Failed to download seattle_energy.csv"; exit 1; }
+          echo "Final file: $(wc -l < "$CSV") lines"
+          
       - name: Run data pipeline
         run: |
           python projects/01_energy/src/preprocess.py
