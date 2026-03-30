@@ -5,17 +5,39 @@ Enhanced preprocessing with feature engineering for better accuracy.
 import pandas as pd
 import numpy as np
 import json
+import re
 from pathlib import Path
 from datetime import datetime
 from sklearn.preprocessing import StandardScaler
 
+def _norm_col(name: str) -> str:
+    """Normalize column names for robust matching across data sources."""
+    return re.sub(r"[^a-z0-9]", "", name.lower())
 
+def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Map Socrata/Kaggle column variants to canonical names used downstream."""
+    aliases = {
+
+    }
+    current = {_norm_col(c): c for c in df.columns}
+    rename_map = {}
+    
+    for target, candidtes in aliases.items():
+        df = df.rename(columns=rename_map)
+        required = ["SiteEnergyUse(kBtu)", "PropertyGFATotal", "YearBuilt", "EPAPropertyType"]
+        missing = [c for c in required if c not in df.columns]
+
+        if missing:
+            raise KeyError(f"Missing required columns after normalization: {missing}")
+    
+    return df
+    
 def load_data(filepath: str) -> pd.DataFrame:
     """Load raw Seattle energy data."""
     df = pd.read_csv(filepath, low_memory=False, thousands=",", na_values=["NA", ""])
+    df = normalize_columns(df)
     print(f"Loaded {len(df):,} rows")
     return df
-
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     """Enhanced cleaning with outlier handling."""
