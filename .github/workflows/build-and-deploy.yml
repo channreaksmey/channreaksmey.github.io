@@ -31,6 +31,13 @@ jobs:
         run: |
           pip install pandas scikit-learn matplotlib joblib
 
+      - name: Download Seattle Energy Data
+        run: |
+          mkdir -p projects/01_energy/data
+          curl -L "https://data.seattle.gov/api/views/2bpz-gwpy/rows.csv?accessType=DOWNLOAD" \
+               -o projects/01_energy/data/seattle_energy.csv
+          echo "Downloaded $(wc -l < projects/01_energy/data/seattle_energy.csv) lines"
+
       - name: Run data pipeline
         run: |
           python projects/01_energy/src/preprocess.py
