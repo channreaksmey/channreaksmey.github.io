@@ -32,49 +32,25 @@ jobs:
           pip install pandas scikit-learn matplotlib joblib kaggle
 
       - name: Download Datasets
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           set -euo pipefail
           mkdir -p projects/01_energy/data
           mkdir -p projects/02_segmentation/data
 
-          ZIP="projects/01_energy/data/seattle_energy.zip"
+          # Seattle Energy Data
           CSV="projects/01_energy/data/seattle_energy.csv"
-          rm -f "$ZIP" "$CSV"
+          curl -fsSL "https://data.seattle.gov/resource/teqw-tu6e.csv?$limit=50000" -o "$CSV"
+          echo "Energy data: $(wc -l < "$CSV") lines"
 
-          echo "Trying Kaggle..."
-          curl -fsSL "https://www.kaggle.com/datasets/city-of-seattle/sea-building-energy-benchmarking/download" -o "$ZIP" || true
-          
-          if [ -s "$ZIP" ] && unzip -tq "$ZIP" >/dev/null 2>&1; then
-            unzip -o "$ZIP" -d projects/01_energy/data/
-            first_csv="$(find projects/01_energy/data -maxdepth 1 -name "*.csv" | head -n 1 || true)"
-            if [ -n "$first_csv" ]; then
-              mv "$first_csv" "$CSV"
-            fi
-          else
-            echo "Kaggle file is not a valid zip (likely auth page). Falling back to Socrata."
-            rm -f "$ZIP"
-          fi
-
-          if [ ! -s "$CSV" ]; then
-            curl -fsSL "https://data.seattle.gov/resource/teqw-tu6e.csv?\$limit=50000" -o "$CSV"
-          fi
-
-          test -s "$CSV" || { echo "Failed to download seattle_energy.csv"; exit 1; }
-          echo "Final file: $(wc -l < "$CSV") lines"
-          
+          # Setup Kaggle credentials ONCE
           mkdir -p "$HOME/.kaggle"
-          cat > "$HOME/.kaggle/kaggle.json" <<EOF
-          {"username":"${KAGGLE_USERNAME}","key":"$KAGGLE_KEY"}
-          EOF
+          echo "{\"username\":\"${KAGGLE_USERNAME}\",\"key\":\"${KAGGLE_KEY}\"}" > "$HOME/.kaggle/kaggle.json"
           chmod 600 "$HOME/.kaggle/kaggle.json"
-
-          mkdir -p "$HOME/.kaggle"
-          cat > "$HOME/.kaggle/kaggle.json" <<EOF
-          {"username":"${KAGGLE_USERNAME}","key":"${KAGGLE_KEY}"}
-          EOF
-          chmod 600 "$HOME/.kaggle/kaggle.json"
-
-          # Download Olist dataset from Kaggle
+          
+          echo "Downloading Olist dataset from Kaggle..."
           kaggle datasets download -d olistbr/brazilian-ecommerce -p projects/02_segmentation/data --force
           
           # Unzip
@@ -92,15 +68,11 @@ jobs:
           test -s projects/02_segmentation/data/customers.csv || { echo "Missing customers.csv"; exit 1; }
           test -s projects/02_segmentation/data/payments.csv || { echo "Missing payments.csv"; exit 1; }
           echo "E-commerce data: $(wc -l < projects/02_segmentation/data/orders.csv) orders"
-        env:
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
 
       - name: Run data pipeline
         run: |
           python projects/01_energy/src/preprocess.py
           python projects/01_energy/src/train_model.py
-
           python projects/02_segmentation/src/preprocess.py
 
       - name: Upload processed data

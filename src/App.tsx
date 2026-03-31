@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import EnergyProject from './components/EnergyProject'
+import SegmentationProject from './components/SegmentationProject'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects/energy" element={<EnergyProject />} />
+          <Route path="/projects/segmentation" element={<SegmentationProject />} />
         </Routes>
       </Layout>
     </HashRouter>
