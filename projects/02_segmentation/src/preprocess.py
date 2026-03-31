@@ -147,21 +147,27 @@ def save_results(rfm: pd.DataFrame, cluster_labels: dict, output_dir: str):
     sample.to_json(output_path / 'customers.json', orient='records', indent=2)
     
     # Save cluster statistics
-    stats = rfm.groupby(['cluster', 'segment_label']).agg({
-        'recency': 'mean',
-        'frequency': 'mean',
-        'monetary': ['mean', 'count']
-    }).round(2)
-    
+    stats = (
+    rfm.groupby(['cluster', 'segment_label'])
+    .agg(
+        avg_recency=('recency', 'mean'),
+        avg_frequency=('frequency', 'mean'),
+        avg_monetary=('monetary', 'mean'),
+        count=('monetary', 'count'),
+    )
+    .round(2)
+    .reset_index())
+
     stats_dict = {}
-    for (cid, label), row in stats.iterrows():
-        stats_dict[int(cid)] = {
-            'label': label,
-            'avg_recency': float(row['recency']),
-            'avg_frequency': float(row['frequency']),
-            'avg_monetary': float(row['monetary']['mean']),
-            'count': int(row['monetary']['count']),
-            'percentage': float(row['monetary']['count']) / len(rfm) * 100
+    for _, row in stats.iterrows():
+        cid = int(row['cluster'])
+        stats_dict[cid] = {
+            'label': row['segment_label'],
+            'avg_recency': float(row['avg_recency']),
+            'avg_frequency': float(row['avg_frequency']),
+            'avg_monetary': float(row['avg_monetary']),
+            'count': int(row['count']),
+            'percentage': float(row['count']) / len(rfm) * 100
         }
     
     with open(output_path / 'clusters.json', 'w') as f:
