@@ -40,9 +40,9 @@ jobs:
           mkdir -p projects/01_energy/data
           mkdir -p projects/02_segmentation/data
 
-          # Seattle Energy Data
+          # Seattle Energy Data - use single quotes to prevent variable expansion
           CSV="projects/01_energy/data/seattle_energy.csv"
-          curl -fsSL "https://data.seattle.gov/resource/teqw-tu6e.csv?$limit=50000" -o "$CSV"
+          curl -fsSL "https://data.seattle.gov/resource/teqw-tu6e.csv?\$limit=50000" -o "$CSV"
           echo "Energy data: $(wc -l < "$CSV") lines"
 
           # Setup Kaggle credentials ONCE
