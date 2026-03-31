@@ -52,7 +52,7 @@ jobs:
           
           echo "Downloading Olist dataset from Kaggle..."
           kaggle datasets download -d olistbr/brazilian-ecommerce -p projects/02_segmentation/data --force
-          
+
           # Unzip
           OLIST_ZIP="projects/02_segmentation/data/brazilian-ecommerce.zip"
           unzip -o "$OLIST_ZIP" -d projects/02_segmentation/data
@@ -68,7 +68,7 @@ jobs:
           test -s projects/02_segmentation/data/customers.csv || { echo "Missing customers.csv"; exit 1; }
           test -s projects/02_segmentation/data/payments.csv || { echo "Missing payments.csv"; exit 1; }
           echo "E-commerce data: $(wc -l < projects/02_segmentation/data/orders.csv) orders"
-
+          
       - name: Run data pipeline
         run: |
           python projects/01_energy/src/preprocess.py
